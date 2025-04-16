@@ -51,7 +51,7 @@ body {
 }
 
 *:focus {
-    outline: 2px dashed var(--color-buttons);
+    outline: none;
     outline-offset: 4px;
 }
 
