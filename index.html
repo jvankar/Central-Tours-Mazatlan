@@ -27,7 +27,7 @@
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="styles-central_tours.css">
+  <link rel="stylesheet" href="styles.css">
 
   <title>Central Tours Mazatlán</title>
 </head>
@@ -35,54 +35,13 @@
 <body>
   <!-- Header section -->
   <header role="banner">
-    <div class="header-top-bar">
-      <!-- Language and contact buttons -->
-      <div class="english-spanish-email-phone-buttons">
-        <button class="english-button" aria-label="English language version" title="Switch to English language">
-          ENG 🇺🇸 🇨🇦
-        </button>
-        <button class="spanish-button">
-          ESP 🇲🇽
-        </button>
-        <button class="email-address" aria-label="Central Tours Mazatlán's email" title="Envíanos un correo electrónico" data-copy="contacto@centraltoursmzt.com">
-          ✉️ Email: contacto@centraltoursmzt.com
-        </button>
-        <button class="phone-number" aria-label="Central Tours Mazatlán's phone number" title="Márcanos a nuestro telefono" data-copy="6691525822">
-          📲 Tel: +52 669 152 5822
-        </button>
-      </div>
-
-      <!-- Search bar -->
-      <div class="search-container">
-        <form id="search-form" role="search" action="/search" method="GET" aria-label="Website search">
-          <button type="button" id="search-button" aria-label="Submit search">
-            <img src="material/svg/search-line.svg" alt="" class="search-icon" width="20" height="20" aria-hidden="true">
-          </button>
-          <input type="search" id="search-input" name="q" placeholder="Buscar..." aria-label="Search through site content" autocomplete="off" spellcheck="false">
-        </form>
-        <div id="search-results" class="search-results" aria-live="polite"></div>
-      </div>
-
-      <!-- Social media icons -->
-      <div class="social-icons">
-        <a href="https://www.instagram.com" aria-label="Instagram profile" title="Visita nuestro Instagram">
-          <img src="material/svg/instagram-logo.svg" alt="Instagram logo" class="social-icon" width="20" height="20" loading="lazy">
-        </a>
-        <a href="https://www.facebook.com" aria-label="Facebook profile" title="Visita nuestro Facebook">
-          <img src="material/svg/facebook-logo.svg" alt="Facebook logo" class="social-icon" width="20" height="20" loading="lazy">
-        </a>
-        <a href="https://www.tiktok.com" aria-label="TikTok profile" title="Visita nuestro TikTok">
-          <img src="material/svg/tiktok-logo.svg" alt="TikTok logo" class="social-icon" width="20" height="20" loading="lazy">
-        </a>
-      </div>
-    </div>
-
+   
     <!-- Main navigation -->
     <nav role="navigation" aria-label="Main menu">
       <div class="nav__header">
         <div class="nav_inner_group">
           <button class="nav_menu_button" id="menu-button" aria-expanded="false" aria-controls="nav-links">
-            <img src="material/svg/menu_button.svg" alt="Abrir menú" class="menu-icon" loading="lazy">
+            <img src="material/svg/menu-button.svg" alt="Abrir menú" class="menu-icon" loading="lazy">
           </button>
 
           <div class="logo">
@@ -103,9 +62,21 @@
 
           <!-- Navigation links -->
           <ul class="nav_links" id="nav-links">
-            <!-- Social Links Mobile-->
-            <li class="nav-social-item" id="nav-link-social">
+            <li><a href="#inicio" title="Ir al inicio">INICIO</a></li>
+            <li><a href="#tours-paseos" title="Explora nuestros tours y actividades">QUIÉNES SOMOS</a></li>
+            <li><a href="#quienes-somos" title="Conoce más sobre nosotros">CATÁLOGO</a></li>
+            <li><a href="#yates-pesca" title="Yates de lujo y pesca deportiva">MAZABLOG</a></li>
+             <!-- Social Icons Mobile-->
+            <li>
+
+               <div class="contact-link">
+                <a href="#email" title="Envíanos un correo electrónico"><img src="material/svg/mail-button.svg" alt="">  EMAIL</a>
+                <a href="#numero-telefono" title="Márcanos a nuestro teléfono"><img src="material/svg/phone-button.svg" alt="">  TELÉFONO</a>
+               </div>
+          
               <div class="social-container">
+
+      
                 <a href="#" aria-label="Instagram profile" title="Visita nuestro Instagram">
                   <img src="material/svg/instagram-logo.svg" alt="Instagram logo" class="social-icon-mobile" width="20" height="20" loading="lazy">
                 </a>
@@ -116,45 +87,39 @@
                   <img src="material/svg/tiktok-logo.svg" alt="TikTok logo" class="social-icon-mobile" width="20" height="20" loading="lazy">
                 </a>
               </div>
+
             </li>
 
-            <li><a href="#inicio" title="Ir al inicio">INICIO</a></li>
-            <li><a href="#quienes-somos" title="Conoce más sobre nosotros">¿QUIÉNES SOMOS?</a></li>
-            <li><a href="#tours-paseos" title="Explora nuestros tours y actividades">TOURS & PASEOS</a></li>
-            <li><a href="#paquetes" title="Ver nuestros paquetes turísticos">PAQUETES</a></li>
-            <li><a href="#yates-pesca" title="Yates de lujo y pesca deportiva">YATES & PESCA</a></li>
-            <li><a href="#transportes" title="Servicios de transportación en Mazatlán">TRANSPORTES</a></li>
-            <li><a href="#hospedajes" title="Encuentra hospedaje en Mazatlán">HOSPEDAJES</a></li>
-            <li><a href="#reservaciones" title="Haz tu reserva online">RESERVACIONES</a></li>
           </ul>
         </div>
-        <div class="whatsapp_button">
-          <a href="https://wa.me/1234567890" id="whatsapp-link" aria-label="Contáctanos por WhatsApp" title="Chatea con nosotros en WhatsApp">
+
+      <!-- Whatsapp button (fix later)
+         <div class="whatsapp_button">
+          <a href="https://wa.me/" id="whatsapp-link" aria-label="Contáctanos por WhatsApp" title="Chatea con nosotros en WhatsApp">
             <div id="lottie-whatsapp"></div>
           </a>
-        </div>
+        </div> -->
+
       </div>
     </nav>
   </header>
 
   <!-- Main content -->
   <main role="main">
-    <!-- Desktop carousel -->
-    <section class="carousel-wrapper">
+    
+     <!-- Desktop carousel -->
+     <section class="carousel-wrapper">
       <div class="carousel-container">
         <div class="carousel-track-container">
           <ul class="carousel-track">
             <li class="carousel-slide current-slide">
-              <img src="material/carousel slides (webp)/slide-1.webp" alt="Vive la verdadera experiencia mazatleca" loading="eager" fetchpriority="high">
+              <img src="material/carousel slides (webp)/slide1-desk.webp" alt="Vive la verdadera experiencia mazatleca" loading="eager" fetchpriority="high">
             </li>
             <li class="carousel-slide">
-              <img src="material/carousel slides (webp)/slide-2.webp" alt="Paseo Isla Venados Mazatlán" loading="lazy">
+              <img src="material/carousel slides (webp)/slide2-desk.webp" alt="Paseo Isla Venados Mazatlán" loading="lazy">
             </li>
             <li class="carousel-slide">
-              <img src="material/carousel slides (webp)/slide-3.webp" alt="Ruta en cuatrimoto en la playa en Mazatlán" loading="lazy">
-            </li>
-            <li class="carousel-slide">
-              <img src="material/carousel slides (webp)/slide-4.webp" alt="Paseo en catamarán con banda sinaloense en vivo" loading="lazy">
+              <img src="material/carousel slides (webp)/slide3-desk.webp" alt="Ruta en cuatrimoto en la playa en Mazatlán" loading="lazy">
             </li>
           </ul>
         </div>
@@ -168,7 +133,6 @@
           <button class="carousel-indicator current-slide" role="tab" aria-selected="true" aria-label="Diapositiva 1"></button>
           <button class="carousel-indicator" role="tab" aria-selected="false" aria-label="Diapositiva 2"></button>
           <button class="carousel-indicator" role="tab" aria-selected="false" aria-label="Diapositiva 3"></button>
-          <button class="carousel-indicator" role="tab" aria-selected="false" aria-label="Diapositiva 4"></button>
         </div>
       </div>
     </section>
@@ -179,16 +143,13 @@
         <div class="carousel-track-container">
           <ul class="carousel-track">
             <li class="carousel-slide current-slide">
-              <img src="material/carousel slides (webp)/slide-1-mob.webp" alt="Vive la verdadera experiencia mazatleca" loading="eager">
+              <img src="material/carousel slides (webp)/slide1-mob.webp" alt="Vive la verdadera experiencia mazatleca" loading="eager">
             </li>
             <li class="carousel-slide">
-              <img src="material/carousel slides (webp)/slide-2-mob.webp" alt="Paseo Isla Venados Mazatlán" loading="lazy">
+              <img src="material/carousel slides (webp)/slide2-mob.webp" alt="Paseo Isla Venados Mazatlán" loading="lazy">
             </li>
             <li class="carousel-slide">
-              <img src="material/carousel slides (webp)/slide-3-mob.webp" alt="Ruta en cuatrimoto en la playa en Mazatlán" loading="lazy">
-            </li>
-            <li class="carousel-slide">
-              <img src="material/carousel slides (webp)/slide-4-mob.webp" alt="Paseo en catamarán con banda sinaloense en vivo" loading="lazy">
+              <img src="material/carousel slides (webp)/slide3-mob.webp" alt="Ruta en cuatrimoto en la playa en Mazatlán" loading="lazy">
             </li>
           </ul>
         </div>
@@ -202,18 +163,64 @@
           <button class="carousel-indicator current-slide" role="tab" aria-selected="true" aria-label="Diapositiva 1"></button>
           <button class="carousel-indicator" role="tab" aria-selected="false" aria-label="Diapositiva 2"></button>
           <button class="carousel-indicator" role="tab" aria-selected="false" aria-label="Diapositiva 3"></button>
-          <button class="carousel-indicator" role="tab" aria-selected="false" aria-label="Diapositiva 4"></button>
         </div>
       </div>
     </section>
+    
+<!-- About Us section -->
+    <section class="section-container" id="about-us"> <!-- former class "quienes-somos-container"-->
 
-    <!-- About us section -->
-    <section class="acerca_de_nosotros" id="quienes-somos">
-      <div class="acercade_container">
-        <h2>¿QUIÉNES SOMOS?</h2>
-        <p>En Central Tours Mazatlán te llevamos a vivir lo mejor del puerto con experiencias únicas, divertidas y personalizadas. Ofrecemos tours por la ciudad, paseos en barco, visitas a La Isla de la Piedra, Isla Venados, la jungla, y mucho más. ¿Quieres algo exclusivo? Contamos con yates y catamaranes privados, con opción de música de banda sinaloense en vivo para celebrar a lo grande. También tenemos cuatrimotos, paseos a caballo y vuelos en helicóptero para quienes buscan adrenalina. Además, en Central Tours Mazatlán cuidamos cada detalle: ofrecemos transportación al aeropuerto, rentas vacacionales, y paquetes especiales para agencias y operadores turísticos. Pasión, calidad y atención personalizada es lo que nos distingue. Por eso, quienes confían en Central Tours Mazatlán, siempre regresan.</p>
-      </div>
+      <h1 class="section-title">Quiénes Somos</h1>
+
+      <div class="section-content"> <!-- former class "quienes-somos-content"-->
+      
+        <article>
+            <div class="article-content" id="nuestra-historia"><img src="material/img/img-1.webp" alt=""> <!-- former class "article-text"-->
+            <div><h2>Nuestra Historia</h2><p>Desde 2016, Central Tours Mazatlán ofrece los mejores tours y experiencias, garantizando los mejores precios y satisfacción. <span>¡Todo en un solo lugar!</span></p></div> </div>
+        </article>
+
+        <article>
+          
+          <div class="article-content" id="nuestro-equipo"><img src="material/img/img-2.webp" alt=""> <!-- former class "article-text"-->
+          <div><h2>Nuestro Equipo</h2><p>Un equipo comprometido en brindar atención única y crear recuerdos que te harán volver. <span>¡Lo hemos comprobado!</span></p></div> </div>
+        </article>
+    </div>
     </section>
+
+    <!-- Catalog section -->
+    <section class="section-container">
+
+      <h1>NUESTRO CATÁLOGO</h1>
+       <div class="categories-container">
+
+        <div class="category" id="paseos-tours">
+          <img src="material/categories (webp)/paesos-tours.webp" alt="Paseos y tours en Mazatlán" class="category-img"> <h3>Paseos & Tours</h3>
+        </div>
+
+        <div class="category" id="yates-pescas">
+          <img src="material/categories (webp)/yates-pescas.webp" alt="Yates de lujo y viajes de pesca en Mazatlán" class="category-img"> <h3>Yates & Pescas</h3>
+        </div>
+
+        <div class="category" id="rentas-vacacionales">
+          <img src="material/categories (webp)/rentas-vacacionales.webp" alt="Rentas vacacionales en Mazatlán" class="category-img"> <h3>Rentas Vacacionales</h3>
+        </div>
+
+        <div class="category" id="transportaciones">
+          <img src="material/categories (webp)/transportacion.webp" alt="Transportación desde y al aeropuerto de Mazatlán" class="category-img"> <h3>Transportación</h3>
+        </div>
+
+         <div class="category" id="paquetes">
+          <img src="material/categories (webp)/transportacion.webp" alt="Transportación desde y al aeropuerto de Mazatlán" class="category-img"> <h3>Paquetes</h3>
+        </div>
+
+         <div class="category" id="experiencias">
+          <img src="material/categories (webp)/transportacion.webp" alt="Transportación desde y al aeropuerto de Mazatlán" class="category-img"> <h3>Experiencias</h3>
+        </div>
+
+       </div>
+
+    </section>
+    
   </main>
 
   <!-- Mobile Search Input (Here or styling issues) -->
@@ -225,10 +232,8 @@
   </footer>
 
   <!-- JavaScript files -->
-  <script src="js-central_tours.js" defer></script>
- <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" defer></script> -->
-  <script src="whatsapp-lottie.js" defer></script>
-
+  <script src="main.js" defer></script>
+  
 </body>
 
 </html>
