@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Vive las mejores aventuras en Mazatlán con Central Tours. Disfruta de tours por la ciudad, paseos en yate, actividades extremas, y mucho más con atención personalizada y experiencias inolvidables.">
+  <meta name="keywords" content="Mazatlán, Tours, Paseos en yate, Banda sinaloense, Actividades turísticas, Transportación, Rentas vacacionales, Paquetes turísticos, Pesca deportiva, Yates, Helicópteros">
+  <meta name="author" content="Central Tours Mazatlán">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Central Tours Mazatlán - Todos los tours en Mazatlán en un solo lugar">
+  <meta property="og:description" content="Explora Mazatlán con Central Tours: city tours, paseos en yate, actividades extremas, paquetes turísticos y mucho más. ¡Haz de tu visita una experiencia única!">
+  <meta property="og:image" content="https://www.centraltoursmazatlan.com/material/logo_faro.svg">
+  <meta property="og:url" content="https://www.centraltoursmazatlan.com">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Central Tours Mazatlán">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:image:alt" content="Logo de Central Tours Mazatlán">
+  <meta property="og:image:type" content="image/svg+xml">
+  <link rel="preload" href="material/fonts/Manjari-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="material/fonts/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="material/whatsapp-icon.json" as="fetch" crossorigin="anonymous">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="showmore.css">
+  <script src="main.js" defer></script>
+  <title>Central Tours Mazatlán</title>
+  <style>
+  /* ===== Enhanced Blog Styles - Mobile First ===== */
+
+  /* Variables and Base Styles */
+  :root {
+      --color-primary: #29577E;
+      --color-buttons: #FAD02C;
+      --color-background: #FFFEFD;
+      --color-text: #2c3e50;
+      --color-text-light: #666;
+      --color-accent: #e74c3e;
+      --gradient-primary: linear-gradient(135deg, var(--color-buttons), #f4d03f);
+      --gradient-overlay: linear-gradient(45deg, rgba(212, 175, 55, 0.1), transparent);
+      --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.1);
+      --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.15);
+      --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.2);
+      --transition-fast: all 0.2s ease;
+      --transition-base: all 0.3s ease;
+      --transition-slow: all 0.5s ease;
+      --border-radius: 16px;
+      --header-height-mobile: clamp(98.25px, 25vw, 700px);
+      --header-height-desktop: clamp(60px, 6.5vw, 1500px);
+  }
+  
+  /* Main Blog Container */
+  .content-blog {
+      margin-top: calc(var(--header-height-mobile) + 4vw);
+      padding: 0 1rem;
+      position: relative;
+      max-width: 100%;
+      overflow-x: hidden;
+  }
+  
+  /* Blog Header */
+  .header-blog {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding: 2rem 0;
+      position: relative;
+  }
+  
+  .title-blog {
+      font-family: 'Sunborn', sans-serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      color: var(--color-text);
+      margin-bottom: 1rem;
+      position: relative;
+      display: inline-block;
+  }
+  
+  .title-blog::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60%;
+      height: 4px;
+      background: var(--gradient-primary);
+      border-radius: 2px;
+      animation: slideIn 1s ease-out 0.5s both;
+  }
+  
+  .meta-blog {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+  }
+  
+  .category-blog {
+      background: rgba(212, 175, 55, 0.1);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: var(--color-text-light);
+      border: 2px solid transparent;
+      transition: var(--transition-base);
+  }
+  
+  .category-blog:hover {
+      border-color: var(--color-buttons);
+      transform: translateY(-2px);
+  }
+  
+  /* Animation Classes */
+  .entry-blog {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: var(--transition-slow);
+      margin-bottom: 4rem;
+  }
+  
+  .entry-blog.visible-blog {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
+  .delay-1-blog { transition-delay: 0.1s; }
+  .delay-2-blog { transition-delay: 0.3s; }
+  .delay-3-blog { transition-delay: 0.5s; }
+  
+  /* Hero Section */
+  .hero-blog {
+      margin-bottom: 5rem;
+  }
+  
+  .intro-content-blog {
+      background: linear-gradient(135deg, rgba(41, 87, 126, 0.05), rgba(250, 208, 44, 0.05));
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      margin-bottom: 2rem;
+      border-left: 4px solid var(--color-buttons);
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .intro-content-blog::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 100%;
+      height: 200%;
+      background: var(--gradient-overlay);
+      opacity: 0.1;
+      transform: rotate(15deg);
+  }
+  
+  .lead-blog {
+      font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+      line-height: 1.8;
+      color: var(--color-text);
+      font-weight: 500;
+      margin: 0;
+      position: relative;
+      z-index: 1;
+  }
+  
+  .hero-image-blog {
+      position: relative;
+      margin: 0;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      aspect-ratio: 16/10;
+  }
+  
+  .hero-image-blog img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition-slow);
+  }
+  
+  .image-overlay-blog {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.3));
+      opacity: 0;
+      transition: var(--transition-base);
+  }
+  
+  .hero-image-blog:hover .image-overlay-blog {
+      opacity: 1;
+  }
+  
+  .hero-image-blog:hover img {
+      transform: scale(1.05);
+  }
+  
+  /* Typography */
+  .subtitle-blog {
+      font-family: 'Sunborn', sans-serif;
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      color: var(--color-text);
+      margin: 2rem 0 1.5rem;
+      position: relative;
+      padding-left: 1.5rem;
+  }
+  
+  .subtitle-blog::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: var(--gradient-primary);
+      border-radius: 2px;
+  }
+  
+  .section-center-blog {
+      text-align: center;
+      padding-left: 0;
+  }
+  
+  .section-center-blog::before {
+      display: none;
+  }
+  
+  .section-center-blog::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: var(--gradient-primary);
+      border-radius: 2px;
+  }
+  
+  /* Highlight Elements */
+  .highlight-blog {
+      color: var(--color-buttons);
+      font-weight: 700;
+      position: relative;
+      display: inline-block;
+  }
+  
+  .highlight-blog::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--gradient-primary);
+      opacity: 0.6;
+      transform: scaleX(0);
+      transition: var(--transition-base);
+      transform-origin: left;
+  }
+  
+  .highlight-blog:hover::after {
+      transform: scaleX(1);
+  }
+  
+  .highlight-box-blog {
+      background: var(--gradient-primary);
+      color: var(--color-text);
+      padding: 1rem;
+      border-radius: 12px;
+      margin: 1.5rem 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+  }
+  
+  .highlight-box-blog::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+      animation: shimmer 3s infinite;
+  }
+  
+  .highlight-desc-blog {
+      font-size: 0.9rem;
+      margin: 0.5rem 0 0;
+      opacity: 0.8;
+  }
+  
+  /* Stats Section */
+  .stats-blog {
+      display: flex;
+      gap: 1rem;
+      margin: 2rem 0;
+  }
+  
+  .stat-item-blog {
+      flex: 1;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background: rgba(41, 87, 126, 0.05);
+      border-radius: 12px;
+      border: 2px solid transparent;
+      transition: var(--transition-base);
+  }
+  
+  .stat-item-blog:hover {
+      border-color: var(--color-buttons);
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+  }
+  
+  .stat-number-blog {
+      display: block;
+      font-family: 'Sunborn', sans-serif;
+      font-size: 2rem;
+      color: var(--color-buttons);
+      font-weight: bold;
+  }
+  
+  .stat-label-blog {
+      font-size: 0.9rem;
+      color: var(--color-text-light);
+      margin-top: 0.5rem;
+  }
+  
+  /* Quote Section */
+  .quote-section-blog {
+      padding: 2rem 0;
+  }
+  
+  .blockquote-blog {
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(244, 208, 63, 0.05));
+      padding: 2rem;
+      margin: 0;
+      border-radius: var(--border-radius);
+      position: relative;
+      box-shadow: var(--shadow-sm);
+      border-left: 4px solid var(--color-buttons);
+  }
+  
+  .blockquote-blog::before {
+      content: '"';
+      position: absolute;
+      top: -20px;
+      left: 30px;
+      font-size: 5rem;
+      color: var(--color-buttons);
+      opacity: 0.2;
+      font-family: serif;
+      line-height: 1;
+  }
+  
+  .blockquote-blog p {
+      font-style: italic;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin: 0 0 1rem;
+      color: var(--color-text);
+  }
+  
+  .quote-author-blog {
+      display: block;
+      text-align: right;
+      font-size: 0.9rem;
+      color: var(--color-text-light);
+      font-style: normal;
+  }
+  
+  /* Feature Cards */
+  .features-blog {
+      margin: 4rem 0;
+  }
+  
+  .features-header-blog {
+      margin-bottom: 2rem;
+  }
+  
+  .features-grid-blog {
+      display: grid;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+  }
+  
+  .feature-card-blog {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 2rem 1.5rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-sm);
+      border: 2px solid transparent;
+      transition: var(--transition-base);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .feature-card-blog::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: var(--gradient-overlay);
+      transition: var(--transition-base);
+  }
+  
+  .feature-card-blog:hover {
+      border-color: var(--color-buttons);
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+  }
+  
+  .feature-card-blog:hover::before {
+      left: 0;
+  }
+  
+  .feature-icon-blog {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 1;
+  }
+  
+  .feature-title-blog {
+      font-family: 'Sunborn', sans-serif;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: var(--color-text);
+      position: relative;
+      z-index: 1;
+  }
+  
+  .feature-desc-blog {
+      color: var(--color-text-light);
+      line-height: 1.6;
+      margin: 0;
+      position: relative;
+      z-index: 1;
+  }
+  
+  .features-image-blog {
+      margin: 3rem 0 0;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      aspect-ratio: 4/3; /* You can adjust this to 2/1 or 3/2 if you prefer */
+  }
+  
+  .features-image-blog img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition-base);
+  }
+  
+  .features-image-blog:hover img {
+      transform: scale(1.1);
+  }
+  
+  /* Experience Section */
+  .experience-blog {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+  }
+  
+  .experience-image-blog {
+      position: relative;
+      margin: 0;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      aspect-ratio: 4/3; /* Set to horizontal */
+  }
+  
+  .experience-image-blog img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition-slow);
+  }
+  
+  .image-badge-blog {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: var(--gradient-primary);
+      color: var(--color-text);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 0.9rem;
+      box-shadow: var(--shadow-sm);
+  }
+  
+  .experience-content-blog {
+      padding: 1rem 0;
+  }
+  
+  .experience-text-blog p {
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+      color: var(--color-text);
+  }
+  
+  .experience-highlight-blog {
+      background: linear-gradient(135deg, rgba(41, 87, 126, 0.05), rgba(250, 208, 44, 0.05));
+      padding: 1.5rem;
+      border-radius: 12px;
+      border-left: 4px solid var(--color-primary);
+      margin: 2rem 0;
+  }
+  
+  .experience-highlight-blog p {
+      margin: 0;
+      font-style: italic;
+      color: var(--color-text);
+  }
+  
+  /* Panoramic Section */
+  .panoramic-blog {
+      margin: 5rem 0;
+  }
+  
+  .panoramic-image-blog {
+      position: relative;
+      margin: 0;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      aspect-ratio: 16/9; /* Horizontal layout */
+  }
+  
+  .panoramic-image-blog img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition-slow);
+  }
+  
+  .panoramic-caption-blog {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,0.8));
+      color: white;
+      padding: 3rem 2rem 2rem;
+      transform: translateY(100%);
+      transition: var(--transition-base);
+  }
+  
+  .panoramic-image-blog:hover .panoramic-caption-blog {
+      transform: translateY(0);
+  }
+  
+  .panoramic-caption-blog h3 {
+      font-family: 'Sunborn', sans-serif;
+      font-size: 1.5rem;
+      margin: 0 0 0.5rem;
+  }
+  
+  .panoramic-caption-blog p {
+      margin: 0;
+      opacity: 0.9;
+  }
+  
+  /* Tips Section */
+  .tips-blog {
+      margin: 4rem 0;
+  }
+  
+  .tips-grid-blog {
+      display: grid;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+  }
+  
+  .tip-card-blog {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 2rem 1.5rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+      border: 2px solid transparent;
+      transition: var(--transition-base);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .tip-card-blog::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: conic-gradient(from 0deg, transparent, var(--color-buttons), transparent);
+      opacity: 0;
+      transition: var(--transition-base);
+      animation: rotate 3s linear infinite;
+  }
+  
+  .tip-card-blog:hover {
+      border-color: var(--color-buttons);
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: var(--shadow-lg);
+  }
+  
+  .tip-card-blog:hover::before {
+      opacity: 0.1;
+  }
+  
+  .tip-icon-blog {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 1;
+  }
+  
+  .tip-title-blog {
+      font-family: 'Sunborn', sans-serif;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: var(--color-text);
+      position: relative;
+      z-index: 1;
+  }
+  
+  .tip-card-blog p {
+      color: var(--color-text-light);
+      line-height: 1.5;
+      margin: 0;
+      position: relative;
+      z-index: 1;
+  }
+  
+  .final-note-blog {
+      background: var(--gradient-primary);
+      color: var(--color-text);
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      text-align: center;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .final-note-blog::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 100%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+      animation: shimmer 4s infinite reverse;
+  }
+  
+  .final-note-blog p {
+      margin: 0;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      position: relative;
+      z-index: 1;
+  }
+  
+  /* Animations */
+  @keyframes slideIn {
+      from {
+          transform: translateX(-50%) scaleX(0);
+      }
+      to {
+          transform: translateX(-50%) scaleX(1);
+      }
+  }
+  
+  @keyframes shimmer {
+      0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+      100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+  }
+  
+  @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+  }
+  
+  /* Desktop Styles - Min-width 1025px */
+  @media (min-width: 1025px) {
+      .content-blog {
+          max-width: 1200px;
+          margin: calc(var(--header-height-desktop) + 2vw) auto 3rem;
+          padding: 0 2rem;
+      }
+  
+      .header-blog {
+          margin-bottom: 5rem;
+          padding: 3rem 0;
+      }
+  
+      .title-blog {
+          font-size: 4rem;
+      }
+  
+      .meta-blog {
+          gap: 3rem;
+      }
+  
+      /* Hero Layout */
+      .hero-blog {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 4rem;
+          align-items: center;
+          margin-bottom: 6rem;
+      }
+  
+      .intro-content-blog {
+          margin-bottom: 0;
+          padding: 3rem;
+      }
+  
+      .hero-image-blog {
+          aspect-ratio: 4/3; /* Set to horizontal (4:3) */
+      }
+  
+      /* Split Content Layout */
+      .content-split-blog {
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          gap: 4rem;
+          align-items: start;
+      }
+  
+      .history-blog .text-content-blog {
+          grid-column: 1;
+      }
+  
+      .history-blog .stats-blog {
+          grid-column: 2;
+          flex-direction: column;
+          gap: 2rem;
+          position: sticky;
+          top: 2rem;
+      }
+  
+      .stat-item-blog {
+          padding: 2rem 1.5rem;
+      }
+  
+      .stat-number-blog {
+          font-size: 3rem;
+      }
+  
+      /* Quote Section Enhanced */
+      .blockquote-blog {
+          padding: 4rem 3rem;
+          margin: 4rem 0;
+          font-size: 1.4rem;
+      }
+  
+      .blockquote-blog::before {
+          font-size: 8rem;
+          top: -40px;
+          left: 50px;
+      }
+  
+      /* Features Grid Layout */
+      .features-grid-blog {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 2rem;
+      }
+  
+      .features-image-blog {
+          grid-column: 1 / -1;
+          max-width: 800px;
+          margin: 4rem auto 0;
+          aspect-ratio: 4/3; /* Set to horizontal (4:3) */
+      }
+  
+      /* Asymmetric Experience Layout */
+      .content-asymmetric-blog {
+          display: grid;
+          grid-template-columns: 5fr 7fr;
+          gap: 5rem;
+          align-items: start;
+      }
+  
+      .experience-image-blog {
+          position: sticky;
+          top: 2rem;
+          aspect-ratio: 4/3; /* Set to horizontal (4:3) */
+      }
+  
+      .experience-content-blog {
+          padding: 2rem 0;
+      }
+  
+      .experience-text-blog {
+          column-count: 1;
+      }
+  
+      .experience-highlight-blog {
+          margin: 3rem 0;
+          padding: 2rem;
+      }
+  
+      /* Panoramic Enhanced */
+      .panoramic-image-blog {
+          aspect-ratio: 16/9; /* Set to a horizontal layout */
+          margin: 0 -2rem;
+          width: calc(100% + 4rem);
+      }
+  
+      .panoramic-caption-blog {
+          padding: 4rem 3rem 3rem;
+      }
+  
+      .panoramic-caption-blog h3 {
+          font-size: 2rem;
+      }
+  
+      /* Tips Grid Layout */
+      .tips-grid-blog {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 2rem;
+          margin-bottom: 4rem;
+      }
+  
+      .tip-card-blog {
+          padding: 3rem 2rem;
+      }
+  
+      .tip-icon-blog {
+          font-size: 4rem;
+          margin-bottom: 1.5rem;
+      }
+  
+      .tip-title-blog {
+          font-size: 1.4rem;
+      }
+  
+      .final-note-blog {
+          padding: 3rem;
+          font-size: 1.2rem;
+      }
+  
+      /* Advanced Grid Layouts */
+      .content-grid-blog {
+          display: grid;
+          grid-template-columns: repeat(12, 1fr);
+          gap: 2rem;
+      }
+  
+      .features-header-blog {
+          grid-column: 1 / -1;
+          text-align: center;
+          margin-bottom: 3rem;
+      }
+  
+      .features-grid-blog {
+          grid-column: 1 / 9;
+          grid-template-columns: repeat(2, 1fr);
+      }
+  
+      .features-image-blog {
+          grid-column: 9 / -1;
+          margin: 0;
+          aspect-ratio: 4/3; /* Set to horizontal (4:3) */
+          position: sticky;
+          top: 2rem;
+      }
+  
+      .content-cards-blog {
+          display: block;
+      }
+  
+      /* Hover Effects Enhancement */
+      .feature-card-blog:hover {
+          transform: translateY(-15px) rotateX(5deg);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      }
+  
+      .tip-card-blog:hover {
+          transform: translateY(-15px) scale(1.05);
+          box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+      }
+  
+      /* Staggered Animation for Desktop */
+      .features-grid-blog .feature-card-blog:nth-child(1) { animation-delay: 0.1s; }
+      .features-grid-blog .feature-card-blog:nth-child(2) { animation-delay: 0.2s; }
+      .features-grid-blog .feature-card-blog:nth-child(3) { animation-delay: 0.3s; }
+      .features-grid-blog .feature-card-blog:nth-child(4) { animation-delay: 0.4s; }
+  
+      .tips-grid-blog .tip-card-blog:nth-child(1) { animation-delay: 0.1s; }
+      .tips-grid-blog .tip-card-blog:nth-child(2) { animation-delay: 0.2s; }
+      .tips-grid-blog .tip-card-blog:nth-child(3) { animation-delay: 0.3s; }
+      .tips-grid-blog .tip-card-blog:nth-child(4) { animation-delay: 0.4s; }
+  
+      /* Parallax-like Effects */
+      .hero-image-blog:hover {
+          transform: perspective(1000px) rotateY(-5deg) rotateX(2deg);
+      }
+  
+      .panoramic-image-blog:hover img {
+          transform: scale(1.1) rotateZ(0.5deg);
+      }
+  
+      /* Enhanced Typography for Desktop */
+      .lead-blog {
+          font-size: 1.4rem;
+          line-height: 2;
+      }
+  
+      .subtitle-blog {
+          font-size: 2.5rem;
+          margin: 3rem 0 2rem;
+      }
+  
+      /* Floating Elements */
+      .highlight-box-blog {
+          position: relative;
+          transform-style: preserve-3d;
+      }
+  
+      .highlight-box-blog:hover {
+          transform: translateZ(10px) rotateX(5deg);
+      }
+  
+      /* Advanced Grid for Complex Layouts */
+      .content-masonry-blog {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 2rem;
+          grid-auto-rows: masonry;
+      }
+  
+      /* Smooth Scrolling Enhancements */
+      .content-blog {
+          scroll-behavior: smooth;
+      }
+  
+      /* Advanced Shadow Effects */
+      .entry-blog.visible-blog {
+          filter: drop-shadow(0 4px 20px rgba(250, 208, 44, 0.1));
+      }
+  }
+</style>
+</head>
+<body>
+  <header role="banner">
+    <nav role="navigation" aria-label="Main menu">
+      <div class="nav__header">
+        <div class="nav_inner_group">
+          <button class="nav_menu_button" id="menu-button" aria-expanded="false" aria-controls="nav-links">
+            <img src="material/svg/menu-button.svg" alt="Abrir menú" class="menu-icon" loading="lazy">
+          </button>
+          <div class="logo">
+            <a href="index.php" title="Ir a la página principal">
+              <img src="material/svg/logo-completo-header.svg" alt="Logo de Central Tours Mazatlán" class="logo-image" width="160" loading="lazy">
+            </a>
+          </div>
+          
+          <!-- Unified Search Container -->
+          <div id="search-container">
+            <form id="search-form" role="search" action="busqueda.php" method="GET" aria-label="Website search">
+              <input type="text" id="search-input" name="q" placeholder="Buscar..." autocomplete="off">
+              <button type="button" id="search-button" aria-label="Enviar búsqueda">
+                <img src="material/svg/search-line.svg" alt="" class="search-icon" width="20" height="20" aria-hidden="true">
+              </button>
+            </form>
+            <div id="search-results" class="search-results" aria-live="polite"></div>
+          </div>
+          
+        <ul class="nav_links" id="nav-links">
+             <li><a id="link-inicio" href="index.html" title="Ir al inicio"><img src="material/svg/inicio.svg" alt=""><span>INICIO</span></a></li>
+             <li><a href="our-catalog.html" title="Catálogo de tours"><img src="material/svg/catalogo.svg" alt=""><span>CATÁLOGO</span></a></li>
+             <li><a href="about-us.html" title="Quiénes somos"><img src="material/svg/acerca-de-nosotros.svg" alt=""><span>NOSOTROS</span></a></li>
+             <li><a href="contact-us.html" class="contacto-link" title="Contacto"><img src="material/svg/contacto.svg" alt=""><span>CONTACTO</span></a>
+             <!-- Single container for all social links -->
+            <li class="social-container">
+              <div class="social-links social-dance">
+               <a href="#" title="Síguenos en Instagram"><img src="material/svg/instagram-logo.svg" alt="Instagram"></a>
+               <a href="#" title="Síguenos en Facebook"><img src="material/svg/facebook-logo.svg" alt="Facebook"></a>
+               <a href="#" title="Síguenos en TikTok"><img src="material/svg/tiktok-logo.svg" alt="TikTok"></a>
+              </div>
+            </li>
+        </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+   <!-- POST CONTENT -->
+<main class="content-blog">
+    <h1 class="title-blog">El Faro de Mazatlán</h1>
+   
+    <!-- Hero section with intro -->
+    <section class="hero-blog entry-blog delay-1-blog">
+        <div class="intro-content-blog">
+            <p class="lead-blog">Dominando la silueta de la ciudad desde lo alto del Cerro del Crestón, el Faro de Mazatlán es mucho más que una guía para los navegantes: es un símbolo histórico y cultural que ofrece vistas inigualables del Pacífico y del malecón más largo del mundo.</p>
+        </div>
+        <figure class="hero-image-blog">
+            <img src="material/img/faro-blog-2.webp" alt="Faro de Mazatlán" loading="lazy">
+            <div class="image-overlay-blog"></div>
+        </figure>
+    </section>
+
+    <!-- History section with side layout -->
+    <section class="history-blog entry-blog content-split-blog delay-2-blog">
+        <div class="text-content-blog">
+            <h2 class="subtitle-blog">Historia y Arquitectura</h2>
+            <p>Construido en 1879 tras varios intentos fallidos, el faro original fue reemplazado en 1900 por la torre que conocemos hoy.</p>
+            <div class="highlight-box-blog">
+                <span class="highlight-blog">59 metros sobre el nivel del mar</span>
+                <p class="highlight-desc-blog">Altura total del faro</p>
+            </div>
+            <p>Su cuerpo cilíndrico de mampostería y piedra volcánica se ha convertido en uno de los emblemas más reconocidos de Mazatlán.</p>
+        </div>
+        <aside class="stats-blog">
+            <div class="stat-item-blog">
+                <span class="stat-number-blog">1879</span>
+                <span class="stat-label-blog">Año de construcción</span>
+            </div>
+            <div class="stat-item-blog">
+                <span class="stat-number-blog">329</span>
+                <span class="stat-label-blog">Escalones</span>
+            </div>
+        </aside>
+    </section>
+
+    <!-- Quote section with enhanced styling -->
+    <section class="quote-section-blog entry-blog delay-2-blog">
+        <blockquote class="blockquote-blog">
+            <p>"Más que un vigía del mar, este faro ha sido testigo silente de generaciones de marineros y soñadores."</p>
+            <cite class="quote-author-blog">– Archivo Histórico de Mazatlán</cite>
+        </blockquote>
+    </section>
+
+    <!-- Interactive features section -->
+    <section class="features-blog entry-blog content-grid-blog delay-2-blog">
+        <div class="features-header-blog">
+            <h2 class="subtitle-blog">Durante tu visita podrás recorrer:</h2>
+        </div>
+        <div class="features-grid-blog">
+            <div class="feature-card-blog" data-feature="gallery">
+                <div class="feature-icon-blog">📸</div>
+                <h3 class="feature-title-blog">Galería Histórica</h3>
+                <p class="feature-desc-blog"><span class="highlight-blog">Fotos antiguas</span> del desarrollo portuario de Mazatlán</p>
+            </div>
+            <div class="feature-card-blog" data-feature="machinery">
+                <div class="feature-icon-blog">⚙️</div>
+                <h3 class="feature-title-blog">Sala de Máquinas</h3>
+                <p class="feature-desc-blog">Artefactos originales y mecanismos históricos</p>
+            </div>
+            <div class="feature-card-blog" data-feature="viewpoint">
+                <div class="feature-icon-blog">🌊</div>
+                <h3 class="feature-title-blog">Miradores</h3>
+                <p class="feature-desc-blog">Vista al <span class="highlight-blog">Océano Pacífico</span> y al malecón</p>
+            </div>
+            <div class="feature-card-blog" data-feature="museum">
+                <div class="feature-icon-blog">🏛️</div>
+                <h3 class="feature-title-blog">Museo</h3>
+                <p class="feature-desc-blog">Réplicas de semáforos y lámparas históricas</p>
+            </div>
+        </div>
+        <figure class="features-image-blog">
+            <img src="material/img/faro-blog-1.webp" alt="Interior del faro" loading="lazy">
+        </figure>
+    </section>
+
+    <!-- Experience section with multimedia -->
+    <section class="experience-blog entry-blog content-asymmetric-blog delay-3-blog">
+        <figure class="experience-image-blog">
+            <img src="material/img/faro-blog-3.webp" alt="Escaleras del faro" loading="lazy">
+            <div class="image-badge-blog">329 escalones</div>
+        </figure>
+        <div class="experience-content-blog">
+            <h2 class="subtitle-blog">Experiencias de Visita</h2>
+            <div class="experience-text-blog">
+                <p>Subir los <span class="highlight-blog">329 escalones</span> hasta la linterna puede parecer desafiante, pero cada peldaño recompensa con perspectivas únicas de la bahía y del casco antiguo de Mazatlán.</p>
+                <div class="experience-highlight-blog">
+                    <p>Al llegar a la cima, el viento marino y el sonido de las olas crean una atmósfera inolvidable. Muchos visitantes aprovechan para contemplar el espectáculo natural que se despliega ante sus ojos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Panoramic image section -->
+    <section class="panoramic-blog entry-blog delay-3-blog">
+        <figure class="panoramic-image-blog">
+            <img src="material/img/faro-blog-4.webp" alt="Vista panorámica desde el faro" loading="lazy">
+            <div class="panoramic-caption-blog">
+                <h3>Vista panorámica desde la cima</h3>
+                <p>Una perspectiva única de Mazatlán y el Pacífico</p>
+            </div>
+        </figure>
+    </section>
+
+    <!-- Tips section with interactive elements -->
+    <section class="tips-blog entry-blog content-cards-blog delay-3-blog">
+        <h2 class="subtitle-blog section-center-blog">Consejos Prácticos</h2>
+        <div class="tips-grid-blog">
+            <div class="tip-card-blog" data-tip="footwear">
+                <div class="tip-icon-blog">👟</div>
+                <h3 class="tip-title-blog">Calzado Cómodo</h3>
+                <p>Lleva zapatos deportivos para la escalada</p>
+            </div>
+            <div class="tip-card-blog" data-tip="hydration">
+                <div class="tip-icon-blog">💧</div>
+                <h3 class="tip-title-blog">Hidratación</h3>
+                <p>Agua suficiente para el ascenso bajo el sol</p>
+            </div>
+            <div class="tip-card-blog" data-tip="timing">
+                <div class="tip-icon-blog">🌅</div>
+                <h3 class="tip-title-blog">Mejor Horario</h3>
+                <p>Visita al atardecer para el <span class="highlight-blog">juego de luces</span></p>
+            </div>
+            <div class="tip-card-blog" data-tip="photography">
+                <div class="tip-icon-blog">📷</div>
+                <h3 class="tip-title-blog">Fotografía</h3>
+                <p>Cada ángulo ofrece una nueva perspectiva de Mazatlán</p>
+            </div>
+        </div>
+        <div class="final-note-blog">
+            <p>No olvides tu cámara: desde la Isla de la Piedra hasta la inmensidad oceánica, cada vista es una postal perfecta.</p>
+        </div>
+    </section>
+
+</main>
+
+    <!-- Related section (unchanged as requested) -->
+    <section class="related-blog">
+        <div class="container-blog">
+            <h2 class="section-title-blog delay-1-blog">También te puede interesar</h2>
+            <div class="grid-blog">
+                
+               <article class="card-blog delay-1-blog">
+                    <figure class="card-image-blog">
+                        <img src="material/img/primo.webp" alt="El Faro de Mazatlan">
+                    </figure>
+                    <div class="card-content-blog">
+                        <h3 class="card-title-blog">¿Quién es el primo del Diego?</h3>
+                        <p>¿Alguna vez te has preguntado quién es el primo del Diego Barraza y qué relación tiene con el Blanchet?.</p>
+                        <a href="blog-elprimo.html" class="readmore-blog">Leer más →</a>
+                    </div>
+                </article>
+
+                <article class="card-blog delay-2-blog">
+                    <figure class="card-image-blog">
+                        <img src="material/img/catedral.webp" alt="">
+                    </figure>
+                    <div class="card-content-blog">
+                        <h3 class="card-title-blog">Visita a la Catedral de Mazatlán</h3>
+                        <p>Conoce la majestuosidad de la catedral de estilo barroco y su historia centenaria.</p>
+                        <a href="#" class="readmore-blog">Leer más →</a>
+                    </div>
+                </article>
+
+                <article class="card-blog delay-3-blog">
+                    <figure class="card-image-blog">
+                        <img src="material/img/clavadista-thumb.webp" alt="">
+                    </figure>
+                    <div class="card-content-blog">
+                        <h3 class="card-title-blog">El Clavadista de Mazatlán</h3>
+                        <p>Un ícono del puerto ¿Cuál es la historia detrás de esta tradición?</p>
+                        <a href="#" class="readmore-blog">Leer más →</a>
+                    </div>
+                </article>
+
+                <article class="card-blog delay-3-blog">
+                    <figure class="card-image-blog">
+                        <img src="material/img/clavadista-thumb.webp" alt="">
+                    </figure>
+                    <div class="card-content-blog">
+                        <h3 class="card-title-blog">Carnaval de Mazatlán</h3>
+                        <p>Vive la fiesta más colorida de México con desfiles, música y tradición.</p>
+                        <a href="#" class="readmore-blog">Leer más →</a>
+                    </div>
+                </article>
+
+            </div>
+            <!-- Show More / Show Less -->
+    <button id="show-more-blog" class="show-more-blog">
+      Mostrar más
+    </button>
+        </div>
+    </section>
+<footer class="copyright">
+    <p>&copy; 2025 Central Tours Mazatlán. Todos los derechos reservados.</p>
+</footer>
+<script>
+ // ==============================================
+// OPTIMIZED BLOG FUNCTIONALITY
+// ==============================================
+class BlogEnhancer {
+    constructor() {
+        this.scrollTicking = false;
+        this.init();
+    }
+    init() {
+        this.setupScrollAnimations();
+        this.setupInteractiveCards();
+        // Removed setupProgressBar and setupReadingTime methods
+    }
+    // Efficient scroll animations with single observer
+    setupScrollAnimations() {
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible-blog');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        // Observe all blog elements at once
+        document.querySelectorAll('.entry-blog').forEach(element => {
+            observer.observe(element);
+        });
+    }
+    // Minimal interactive effects
+    setupInteractiveCards() {
+        // Simple hover effects for feature cards
+        document.querySelectorAll('.feature-card-blog').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-8px)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+            });
+        });
+        // Simple hover effects for tip cards
+        document.querySelectorAll('.tip-card-blog').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-5px) scale(1.02)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+            });
+        });
+        // Stats counter animation (only on first hover)
+        document.querySelectorAll('.stat-item-blog').forEach(stat => {
+            let animated = false;
+            stat.addEventListener('mouseenter', () => {
+                if (!animated) {
+                    this.animateStatNumber(stat);
+                    animated = true;
+                }
+            });
+        });
+    }
+    // Optimized stat animation
+    animateStatNumber(stat) {
+        const numberElement = stat.querySelector('.stat-number-blog');
+        if (!numberElement) return;
+        const finalNumber = parseInt(numberElement.textContent);
+        const duration = 1000; // 1 second
+        const startTime = performance.now();
+        const animate = (currentTime) => {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            // Easing function for smooth animation
+            const easeOut = 1 - Math.pow(1 - progress, 3);
+            const currentNumber = Math.floor(finalNumber * easeOut);
+            numberElement.textContent = currentNumber;
+            if (progress < 1) {
+                requestAnimationFrame(animate);
+            }
+        };
+        requestAnimationFrame(animate);
+    }
+}
+// Utility functions for potential future use
+const BlogUtils = {
+    // Smooth scroll to element
+    scrollToElement: (selector) => {
+        const element = document.querySelector(selector);
+        if (element) {
+            element.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    },
+    // Format dates
+    formatDate: (date) => {
+        return new Intl.DateTimeFormat('es-ES', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        }).format(new Date(date));
+    },
+    // Simple share functionality
+    shareArticle: (title, url) => {
+        if (navigator.share) {
+            navigator.share({ title, url });
+        } else if (navigator.clipboard) {
+            navigator.clipboard.writeText(url);
+        }
+    }
+};
+// Initialize when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    new BlogEnhancer();
+    // Legacy support
+    setupBlogReveal();
+    setupBlogGrid();
+});
+// Legacy functions for backward compatibility
+function setupBlogReveal() {
+    const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add('visible-blog');
+                io.unobserve(e.target);
+            }
+        });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.card-blog, .section-title-blog')
+            .forEach(el => io.observe(el));
+}
+function setupBlogGrid() {
+    const grid = document.querySelector('.grid-blog');
+    const button = document.getElementById('show-more-blog');
+    if (!grid || !button) return;
+    let expanded = false;
+    button.addEventListener('click', () => {
+        expanded = !expanded;
+        grid.classList.toggle('expanded', expanded);
+        button.textContent = expanded ? 'Mostrar menos' : 'Mostrar más';
+        if (!expanded) {
+            BlogUtils.scrollToElement('.grid-blog');
+        }
+    });
+}
+// Export for modules if needed
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { BlogEnhancer, BlogUtils };
+}
+</script>
+</body>
+</html>

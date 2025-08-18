@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Vive las mejores aventuras en Mazatlán con Central Tours. Disfruta de tours por la ciudad, paseos en yate, actividades extremas, y mucho más con atención personalizada y experiencias inolvidables.">
+  <meta name="keywords" content="Mazatlán, Tours, Paseos en yate, Banda sinaloense, Actividades turísticas, Transportación, Rentas vacacionales, Paquetes turísticos, Pesca deportiva, Yates, Helicópteros">
+  <meta name="author" content="Central Tours Mazatlán">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Central Tours Mazatlán - Todos los tours en Mazatlán en un solo lugar">
+  <meta property="og:description" content="Explora Mazatlán con Central Tours: city tours, paseos en yate, actividades extremas, paquetes turísticos y mucho más. ¡Haz de tu visita una experiencia única!">
+  <meta property="og:image" content="https://www.centraltoursmazatlan.com/material/logo_faro.svg">
+  <meta property="og:url" content="https://www.centraltoursmazatlan.com">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Central Tours Mazatlán">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:image:alt" content="Logo de Central Tours Mazatlán">
+  <meta property="og:image:type" content="image/svg+xml">
+  <link rel="preload" href="material/fonts/Manjari-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="material/fonts/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="material/whatsapp-icon.json" as="fetch" crossorigin="anonymous">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="showmore.css">
+  <script src="main.js" defer></script>
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Manjari', sans-serif;
+    color: #333;
+    line-height: 1.7;
+  }
+
+  /* Main container */
+  .main-content-blog {
+    margin-top: calc(var(--header-height-mobile) + 4vw);
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  /* Title styles */
+  .title-blog {
+    font-family: 'Sunborn', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  .title-blog::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-buttons), #f4d03f);
+    border-radius: 2px;
+  }
+
+  /* Sections with fade-in on reveal */
+  .section-blog {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+    margin-bottom: 3rem;
+  }
+  .section-blog.visible-blog {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* Delays for staggered effects */
+  .delay-1-blog { transition-delay: 0.2s; }
+  .delay-2-blog { transition-delay: 0.4s; }
+  .delay-3-blog { transition-delay: 0.6s; }
+
+  /* Subtitles Styles */
+  .subtitle-blog {
+    font-family: 'Sunborn', sans-serif;
+    font-size: 1.5rem;
+    margin: 3rem 0 1.5rem;
+    position: relative;
+    padding-left: 1rem;
+  }
+  .subtitle-blog::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, var(--color-buttons), #f4d03f);
+    border-radius: 2px;
+  }
+
+  /* Highlights in text */
+  .highlight-blog {
+    color: var(--color-buttons);
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+  }
+  .highlight-blog::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-buttons), transparent);
+    opacity: 0.6;
+  }
+
+  /* Blockquote style - no frames, subtle background */
+  .blockquote-blog {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(244, 208, 63, 0.1));
+    padding: 1.5rem;
+    margin: 2.5rem 0;
+    border-radius: 12px;
+    font-style: italic;
+    position: relative;
+  }
+  .blockquote-blog::before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 4rem;
+    color: var(--color-buttons);
+    opacity: 0.3;
+    font-family: serif;
+  }
+
+  /* List styles */
+  .list-features-blog {
+    padding: 0;
+    margin: 2rem 0;
+    list-style: none;
+  }
+  .list-features-blog li {
+    margin-bottom: 1rem;
+    padding: 0.75rem 0 0.75rem 3rem;
+    position: relative;
+    background: rgba(41, 87, 126, 0.05);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  .list-features-blog li:hover {
+    background: rgba(41, 87, 126, 0.1);
+    transform: translateX(5px);
+  }
+  .list-features-blog li::before {
+    content: '→';
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-buttons);
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  /* Remove frames / borders from images, keep aspect ratio control */
+  .image-container-blog {
+    width: 100%;
+    margin: 2.5rem 0;
+    overflow: hidden;
+    /* No border, no shadow for clean appearance */
+    border-radius: 0;
+  }
+  .image-blog {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  /* Aspect ratio helper classes */
+  .ratio-3by2 { aspect-ratio: 3/2; }
+  .ratio-4by3 { aspect-ratio: 4/3; }
+  .ratio-16by9 { aspect-ratio: 16/9; }
+
+  /* Hover zoom for images */
+  .image-container-blog:hover .image-blog {
+    transform: scale(1.05);
+  }
+
+  /* Layout setups: mobile first, simple stacking with spacing */
+  .section-left-blog,
+  .section-right-align-blog,
+  .section-split-layout-blog,
+  .list-and-image-container-blog {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Text columns on desktop for better readability (more columns) */
+ /* Desktop adjustments */
+  @media (min-width: 1025px) {
+    .main-content-blog {
+      max-width: 1200px;
+      margin: calc(var(--header-height-desktop) + 2vw) auto 3rem;
+      padding: 0 2rem;
+    }
+    .title-blog {
+      font-size: 3rem;
+    }
+    /* Left sections: 2-column grid with image and text side-by-side */
+    .section-left-blog {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+    /* Right sections: same layout */
+    .section-right-align-blog {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+    /* Split sections: 3-column grid */
+    .section-split-layout-blog {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 2rem;
+    }
+    /* Full width images */
+    .section-fullwidth-blog .image-container-blog {
+      max-width: 1000px;
+      margin: 3rem auto;
+      aspect-ratio: 16/9;
+    }
+    /* Convert "Durante tu visita..." paragraph into a more styled block or list */
+    /* Optional: Keep it more concise to prevent visual clutter */
+  }
+</style>
+ 
+  <title>Central Tours Mazatlán</title>
+</head>
+<body>
+  <header role="banner">
+    <nav role="navigation" aria-label="Main menu">
+      <div class="nav__header">
+        <div class="nav_inner_group">
+          <button class="nav_menu_button" id="menu-button" aria-expanded="false" aria-controls="nav-links">
+            <img src="material/svg/menu-button.svg" alt="Abrir menú" class="menu-icon" loading="lazy">
+          </button>
+          <div class="logo">
+            <a href="index.html" title="Ir a la página principal">
+              <img src="material/svg/logo-completo-header.svg" alt="Logo de Central Tours Mazatlán" class="logo-image" width="160" loading="lazy">
+            </a>
+          </div>
+          
+          <!-- Unified Search Container -->
+          <div id="search-container">
+            <form id="search-form" role="search" action="busqueda.php" method="GET" aria-label="Website search">
+              <input type="text" id="search-input" name="q" placeholder="Buscar..." autocomplete="off">
+              <button type="button" id="search-button" aria-label="Enviar búsqueda">
+                <img src="material/svg/search-line.svg" alt="" class="search-icon" width="20" height="20" aria-hidden="true">
+              </button>
+            </form>
+            <div id="search-results" class="search-results" aria-live="polite"></div>
+          </div>
+          
+        <ul class="nav_links" id="nav-links">
+             <li><a id="link-inicio" href="index.html" title="Ir al inicio"><img src="material/svg/inicio.svg" alt=""><span>INICIO</span></a></li>
+             <li><a href="our-catalog.html" title="Catálogo de tours"><img src="material/svg/catalogo.svg" alt=""><span>CATÁLOGO</span></a></li>
+             <li><a href="about-us.html" title="Quiénes somos"><img src="material/svg/acerca-de-nosotros.svg" alt=""><span>NOSOTROS</span></a></li>
+             <li><a href="contact-us.html" class="contacto-link" title="Contacto"><img src="material/svg/contacto.svg" alt=""><span>CONTACTO</span></a>
+             <!-- Single container for all social links -->
+            <li class="social-container">
+              <div class="social-links social-dance">
+               <a href="#" title="Síguenos en Instagram"><img src="material/svg/instagram-logo.svg" alt="Instagram"></a>
+               <a href="#" title="Síguenos en Facebook"><img src="material/svg/facebook-logo.svg" alt="Facebook"></a>
+               <a href="#" title="Síguenos en TikTok"><img src="material/svg/tiktok-logo.svg" alt="TikTok"></a>
+              </div>
+            </li>
+        </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- POST CONTENT -->
+  <main class="main-content-blog">
+
+  <!-- Blog Title -->
+  <h1 class="title-blog">El Faro de Mazatlán</h1>
+
+  <!-- Section 1: Introduction with Text and Image -->
+  <section class="section-blog section-left-blog delay-2-blog">
+    <div class="text-area-blog">
+      <p>Dominando la silueta de la ciudad desde lo alto del Cerro del Crestón, el Faro de Mazatlán es mucho más que una guía para los navegantes: es un símbolo histórico y cultural que ofrece vistas inigualables del Pacífico y del malecón más largo del mundo.</p>
+      <h2 class="subtitle-blog">Historia y Arquitectura</h2>
+      <p>Construido en 1879 tras varios intentos fallidos, el faro original fue reemplazado en 1900 por la torre que conocemos hoy. Con una altura de <span class="highlight-blog">59 metros sobre el nivel del mar</span>, su cuerpo cilíndrico de mampostería y piedra volcánica se ha convertido en uno de los emblemas más reconocidos de Mazatlán.</p>
+    </div>
+    <figure class="image-container-blog">
+      <img src="material/img/faro-blog-2.webp" alt="Faro de Mazatlán" class="image-blog ratio-3by2">
+    </figure>
+  </section>
+
+  <!-- Quote Full Width -->
+  <section class="section-blog section-fullwidth-blog delay-2-blog">
+    <blockquote class="blockquote-blog">
+      "Más que un vigía del mar, este faro ha sido testigo silente de generaciones de marineros y soñadores." – Archivo Histórico de Mazatlán
+    </blockquote>
+  </section>
+
+  <!-- Section 2: List of Features with Image -->
+  <section class="section-blog section-fullwidth-blog delay-2-blog">
+    <div class="list-and-image-container-blog">
+      <div class="text-columns-blog">
+        <p>Durante tu visita podrás recorrer:</p>
+        <ul class="list-features-blog">
+          <li><span class="highlight-blog">Galería de fotos antiguas</span> del desarrollo portuario de Mazatlán</li>
+          <li>Acceso a la sala de máquinas donde se conservan artefactos originales</li>
+          <li>Miradores orientados al <span class="highlight-blog">Océano Pacífico</span> y al malecón</li>
+          <li>Pequeño museo con réplicas de semáforos y lámparas históricas</li>
+        </ul>
+      </div>
+      <figure class="image-container-blog">
+        <img src="material/img/faro-blog-1.webp" alt="Interior del faro" class="image-blog ratio-4by3">
+      </figure>
+    </div>
+  </section>
+
+  <!-- Section 3: Experience Details with Image -->
+  <section class="section-blog section-right-align-blog delay-3-blog">
+    <figure class="image-container-blog">
+      <img src="material/img/faro-blog-3.webp" alt="Escaleras del faro" class="image-blog ratio-4by3">
+    </figure>
+    <div class="text-area-blog">
+      <h2 class="subtitle-blog">Experiencias de Visita</h2>
+      <p>Subir los <span class="highlight-blog">329 escalones</span> hasta la linterna puede parecer desafiante, pero cada peldaño recompensa con perspectivas únicas de la bahía y del casco antiguo de Mazatlán.</p>
+      <p>Al llegar a la cima, el viento marino y el sonido de las olas crean una atmósfera inolvidable. Muchos visitantes aprovechan para contemplar el espectáculo natural que se despliega ante sus ojos.</p>
+    </div>
+  </section>
+
+  <!-- Full Width Panoramic Image -->
+  <section class="section-blog section-fullwidth-blog delay-3-blog">
+    <figure class="image-container-blog">
+      <img src="material/img/faro-blog-4.webp" alt="Vista panorámica desde el faro" class="image-blog ratio-16by9">
+    </figure>
+  </section>
+
+  <!-- Final Tips Section with Split Layout -->
+  <section class="section-blog section-split-layout-blog delay-3-blog">
+    <div class="text-area-blog">
+      <h2 class="subtitle-blog">Consejos Prácticos</h2>
+      <p>Lleva calzado cómodo y agua, ya que la escalada puede ser intensa bajo el sol. Si visitas al atardecer, podrás presenciar el <span class="highlight-blog">fascinante juego de luces</span> mientras encienden la lámpara centenaria.</p>
+      <p>No olvides tu cámara: cada ángulo ofrece una nueva perspectiva de Mazatlán, desde la Isla de la Piedra hasta la inmensidad oceánica.</p>
+    </div>
+  </section>
+
+  <!-- Social Share Buttons -->
+  <section class="social-share-section-blog">
+    <button class="share-button-blog facebook-blog" aria-label="Compartir en Facebook" onclick="shareOnFacebook()">
+      Facebook
+    </button>
+    <button class="share-button-blog pinterest-blog" aria-label="Pin en Pinterest" onclick="shareOnPinterest()">
+      Pin
+    </button>
+    <button class="share-button-blog copy-link-blog" aria-label="Copiar enlace" onclick="copyPageLink()">
+      Copiar enlace
+    </button>
+  </section>
+
+</main>
+
+    <!-- Related section -->
+    <section class="related-blog">
+        <div class="container-blog">
+            <h2 class="section-title-blog delay-1-blog">También te puede interesar</h2>
+            <div class="grid-blog">
+                
+               <article class="card-blog delay-1-blog">
+                    <figure class="card-image-blog">
+                        <img src="material/img/faro.webp" alt="El Faro de Mazatlan">
+                    </figure>
+                    <div class="card-content-blog">
+                        <h3 class="card-title-blog">El Faro de Mazatlán</h3>
+                        <p>Descubre la historia del famoso Faro de Mazatlán, el faro natural más alto del mundo</p>
+                        <a href="blog-elfarodemazatlan.html" class="readmore-blog">Leer más →</a>
+                    </div>
+                </article>
+
+                <article class="card-blog delay-2-blog">
+                    <figure class="card-image-blog">
+                        <img src="material/img/catedral.webp" alt="">
+                    </figure>
+                    <div class="card-content-blog">
+                        <h3 class="card-title-blog">Visita a la Catedral de Mazatlán</h3>
+                        <p>Conoce la majestuosidad de la catedral de estilo barroco y su historia centenaria.</p>
+                        <a href="#" class="readmore-blog">Leer más →</a>
+                    </div>
+                </article>
+
+                <article class="card-blog delay-3-blog">
+                    <figure class="card-image-blog">
+                        <img src="material/img/clavadista-thumb.webp" alt="">
+                    </figure>
+                    <div class="card-content-blog">
+                        <h3 class="card-title-blog">El Clavadista de Mazatlán</h3>
+                        <p>Un ícono del puerto ¿Cuál es la historia detrás de esta tradición?</p>
+                        <a href="#" class="readmore-blog">Leer más →</a>
+                    </div>
+                </article>
+
+                <article class="card-blog delay-3-blog">
+                    <figure class="card-image-blog">
+                        <img src="material/img/clavadista-thumb.webp" alt="">
+                    </figure>
+                    <div class="card-content-blog">
+                        <h3 class="card-title-blog">Carnaval de Mazatlán</h3>
+                        <p>Vive la fiesta más colorida de México con desfiles, música y tradición.</p>
+                        <a href="#" class="readmore-blog">Leer más →</a>
+                    </div>
+                </article>
+                
+            </div>
+            <!-- Show More / Show Less -->
+    <button id="show-more-blog" class="show-more-blog">
+      Mostrar más
+    </button>
+        </div>
+    </section>
+<footer class="copyright">
+    <p>&copy; 2025 Central Tours Mazatlán. Todos los derechos reservados.</p>
+</footer>
+<script>
+  // Reveal animations with smooth, natural transition
+  function initializeBlogAnimations() {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible-blog');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.section-blog').forEach(section => {
+      observer.observe(section);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    initializeBlogAnimations();
+  });
+
+  // Share functions with smooth opening
+  function shareOnFacebook() {
+    const url = window.location.href;
+    const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+    window.open(shareUrl, '_blank', 'width=600,height=400');
+  }
+
+  function shareOnPinterest() {
+    const url = window.location.href;
+    const media = document.querySelector('.image-blog').getAttribute('src');
+    const description = document.querySelector('.title-blog').textContent;
+    const shareUrl = `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(url)}&media=${encodeURIComponent(media)}&description=${encodeURIComponent(description)}`;
+    window.open(shareUrl, '_blank', 'width=600,height=400');
+  }
+
+  function copyPageLink() {
+    const url = window.location.href;
+    navigator.clipboard.writeText(url).then(() => {
+      alert('Enlace copiado al portapapeles');
+    }).catch(() => {
+      prompt('Copia manual:', url);
+    });
+  }
+</script>
+
+</body>
+</html>
