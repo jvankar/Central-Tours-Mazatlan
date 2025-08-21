@@ -54,64 +54,156 @@
 {
   "@context": "https://schema.org",
   "@type": "AboutPage",
-  "name": "Página Acerca de Nosotros - Central Tours Mazatlán",
-  "description": "Descubre la esencia de Central Tours Mazatlán: nuestra historia, valores, misión y el equipo apasionado que trabaja para ofrecer las mejores excursiones y servicios turísticos en la 'Perla del Pacífico'.",
+  "name": "Acerca de Nosotros - Central Tours Mazatlán",
+  "description": "Conoce la historia, misión y equipo detrás de Central Tours Mazatlán. Agencia líder en experiencias turísticas y excursiones en la Perla del Pacífico desde 2016.",
   "url": "https://www.centraltoursmazatlan.com/about-us.html",
   "mainEntity": {
-    "@type": "Organization",
+    "@type": "TourismAgency",
+    "@id": "https://www.centraltoursmazatlan.com/#agency",
     "name": "Central Tours Mazatlán",
-    "legalName": "Central Tours Mazatlán S.A. de C.V." ,
-    "description": "Agencia de tours líder especializada en ofrecer una amplia gama de experiencias, paseos y servicios de transporte de alta calidad en Mazatlán, Sinaloa, México.",
+    "legalName": "Central Tours Mazatlán S.A. de C.V.",
+    "description": "Agencia de tours y excursiones líder en Mazatlán, especializada en experiencias turísticas únicas, transporte de calidad y servicios fotográficos. Operando en la Bahía de Mazatlán desde 2016.",
     "url": "https://www.centraltoursmazatlan.com/",
-    "logo": "https://www.centraltoursmazatlan.com/material/icons/social-icon.png", 
+    "logo": "https://www.centraltoursmazatlan.com/material/icons/social-icon.png",
+    "foundingDate": "2016",
+    "founders": [
+      {
+        "@type": "Person",
+        "name": "Fundador Central Tours Mazatlán"
+      }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mazatlán",
+      "addressRegion": "Sinaloa",
+      "addressCountry": "MX"
+    },
+    "areaServed": "Mazatlán, Sinaloa, México",
+    "serviceArea": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 23.2494,
+        "longitude": -106.4111
+      },
+      "geoRadius": "50000"
+    },
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+52-669-152-5822",
       "email": "info@centraltoursmazatlan.com",
-      "contactType": "customer service"
+      "contactType": "customer service",
+      "availableLanguage": ["Spanish", "English"]
     },
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Tu dirección física aquí (Ej: Av. Camarón Sábalo 123)",
-      "addressLocality": "Mazatlán",
-      "addressRegion": "Sinaloa",
-      "postalCode": "Tu código postal aquí (Ej: 82110)",
-      "addressCountry": "MX"
-    },
+    "knowsAbout": [
+      "Tours en Mazatlán",
+      "Excursiones en Isla Venados",
+      "Transporte turístico",
+      "Experiencias acuáticas",
+      "Turismo de aventura",
+      "Servicios fotográficos"
+    ],
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Tours y excursiones en Mazatlán",
+          "description": "Experiencias únicas y personalizadas en la Perla del Pacífico"
+        }
+      }
+    ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Catálogo de Tours y Servicios de Central Tours Mazatlán",
+      "name": "Tours y Servicios de Central Tours Mazatlán",
       "itemListElement": [
         {
           "@type": "OfferCatalog",
-          "name": "Tours y Excursiones en Mazatlán",
+          "name": "Tours y Excursiones",
           "itemListElement": [
-            { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "Paseo a Isla de la Piedra" } },
-            { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "Paseo a Isla Venados" } },
-            { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "Ruta en Cuatrimoto Extrema" } },
-            { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "Sensation Catamarán con Banda Sinaloense" } },
-            { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "Sensation Catamarán Fresh Cruise" } },
-            { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "Sensation Catamarán Splash Party" } },
-            { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "Tirolesa Extreme" } },
-            { "@type": "Offer", "itemOffered": { "@type": "TouristTrip", "name": "Paseo en Helicóptero" } }
-            // Añadir aquí el resto de tus tours
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "TouristTrip",
+                "name": "Paseo a Isla de la Piedra"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "TouristTrip",
+                "name": "Paseo a Isla Venados"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "TouristTrip",
+                "name": "Ruta en Cuatrimoto Extrema"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "TouristTrip",
+                "name": "Sensation Catamarán con Banda Sinaloense"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "TouristTrip",
+                "name": "Sensation Catamarán Fresh Cruise"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "TouristTrip",
+                "name": "Sensation Catamarán Splash Party"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "TouristTrip",
+                "name": "Tirolesa Extreme"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "TouristTrip",
+                "name": "Paseo en Helicóptero"
+              }
+            }
           ]
         },
         {
           "@type": "OfferCatalog",
-          "name": "Servicios de Transporte en Mazatlán",
+          "name": "Servicios de Transporte",
           "itemListElement": [
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Transporte al Aeropuerto de Mazatlán" } }
-            // Añadir otros servicios de transporte
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Transporte al Aeropuerto de Mazatlán"
+              }
+            }
           ]
         },
         {
-            "@type": "OfferCatalog",
-            "name": "Servicios Adicionales",
-            "itemListElement": [
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sesión Fotográfica en Mazatlán" } }
-              // Añadir otros servicios
-            ]
+          "@type": "OfferCatalog",
+          "name": "Servicios Adicionales",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Sesión Fotográfica en Mazatlán"
+              }
+            }
+          ]
         }
       ]
     },
@@ -119,11 +211,9 @@
       "https://www.facebook.com/CentralToursMazatlan",
       "https://www.instagram.com/centraltoursmazatlan",
       "https://www.tripadvisor.com/CentralToursMazatlan"
-      // Añade aquí todas tus redes sociales y perfiles importantes (TripAdvisor, Google My Business si tienes URL directa, LinkedIn, etc.)
     ],
-    "foundingDate": "20XX-XX-XX" // Si conoces el año (o fecha exacta) de fundación
-  },
-  "keywords": "Quiénes somos Central Tours Mazatlán, historia Central Tours, misión Central Tours, valores Central Tours, equipo Central Tours, agencia de tours Mazatlán, tours confiables Mazatlán, expertos locales Mazatlán, turismo Mazatlán, experiencias Mazatlán, por qué elegir Central Tours Mazatlán"
+    "keywords": "tours Mazatlán, excursiones Mazatlán, transporte turístico, Isla Venados, catamarán Mazatlán, renta de yates, aventura Mazatlán, Central Tours Mazatlán"
+  }
 }
 </script>
 

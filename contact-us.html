@@ -55,35 +55,43 @@
 {
   "@context": "https://schema.org",
   "@type": "ContactPage",
-  "name": "Contacta a Central Tours Mazatlán",
-  "description": "Formas de contactar a nuestro equipo para reservas, consultas sobre tours y servicios en Mazatlán.",
-  "url": "https://www.centraltoursmazatlan.com/contact-us.html",
+  "name": "Contacto - Central Tours Mazatlán",
+  "description": "Contáctanos para reservar tours, excursiones y servicios turísticos en Mazatlán. Central Tours Mazatlán - tu mejor opción para experiencias inolvidables en la Perla del Pacífico.",
+  "url": "https://www.centraltoursmazatlan.com/contacto.html",
   "mainEntity": {
     "@type": "Organization",
     "name": "Central Tours Mazatlán",
-    "contactPoint": [
-      {
-        "@type": "ContactPoint",
-        "telephone": "+52-669-152-5822",
-        "contactType": "customer service",
-        "contactOption": "TollFree",
-        "areaServed": "MX",
-        "availableLanguage": ["Spanish", "English"]
+    "description": "Agencia de tours líder especializada en ofrecer experiencias y servicios turísticos de alta calidad en Mazatlán, Sinaloa, México.",
+    "url": "https://www.centraltoursmazatlan.com/",
+    "email": "info@centraltoursmazatlan.com",
+    "telephone": "+52-669-152-5822",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mazatlán",
+      "addressRegion": "Sinaloa",
+      "addressCountry": "MX"
+    },
+    "areaServed": "Mazatlán y sus alrededores",
+    "serviceArea": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 23.2494,
+        "longitude": -106.4111
       },
-      {
-        "@type": "ContactPoint",
-        "telephone": "+52-669-152-5822",
-        "contactType": "reservations",
-        "contactOption": "TollFree",
-        "areaServed": "MX",
-        "availableLanguage": ["Spanish", "English"]
-      },
-      {
-        "@type": "ContactPoint",
-        "email": "info@centraltoursmazatlan.com",
-        "contactType": "customer service",
-        "areaServed": "MX"
-      }
+      "geoRadius": "50000"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+52-669-152-5822",
+      "contactType": "customer service",
+      "email": "info@centraltoursmazatlan.com",
+      "availableLanguage": ["Spanish", "English"]
+    },
+    "sameAs": [
+      "https://www.facebook.com/CentralToursMazatlan",
+      "https://www.instagram.com/centraltoursmazatlan",
+      "https://www.tripadvisor.com/CentralToursMazatlan"
     ]
   }
 }

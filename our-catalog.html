@@ -54,89 +54,249 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Catálogo de Tours y Servicios - Central Tours Mazatlán",
-  "description": "Catálogo completo de todos nuestros tours, servicios y experiencias disponibles en Mazatlán.",
-  "url": "https://www.centraltoursmazatlan.com/our-catalog.html",
-  "numberOfItems": 6,
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "item": {
-        "@type": "TouristTrip",
-        "name": "Tour Isla de la Piedra",
-        "description": "Tour a la famosa Isla de la Piedra con comida incluida y actividades acuáticas",
-        "offeredBy": {
-          "@type": "Organization",
-          "name": "Central Tours Mazatlán"
-        }
-      }
+      "@type": "TravelAgency",
+      "@id": "https://www.centraltoursmazatlan.com/#agency",
+      "name": "Central Tours Mazatlán",
+      "description": "Agencia de tours y experiencias premium en Mazatlán, Sinaloa, México. Ofrecemos tours exclusivos, renta de yates, sesiones fotográficas en la playa y experiencias únicas en Mazatlán.",
+      "url": "https://www.centraltoursmazatlan.com",
+      "telephone": "+52-669-000-0000",
+      "email": "info@centraltoursmazatlan.com",
+      "founder": {
+        "@type": "Person",
+        "name": "Fundador Central Tours Mazatlán"
+      },
+      "foundingDate": "2016",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mazatlán",
+        "addressRegion": "Sinaloa",
+        "addressCountry": "MX"
+      },
+      "areaServed": "Mazatlán, Sinaloa, México",
+      "serviceType": [
+        "Tours en Mazatlán",
+        "Renta de yates",
+        "Sesiones fotográficas en la playa",
+        "Tours acuáticos",
+        "Experiencias ecoturísticas",
+        "Tours de aventura"
+      ],
+      "keywords": "renta de yates, sesiones fotografías en la playa de Mazatlán, tours mazatlan, tours en mazatlan, paseos mazatlan, experiencias mazatlan, catamarán mazatlan, aventura mazatlan, ecoturismo mazatlan",
+      "sameAs": [
+        "https://www.facebook.com/centraltoursmazatlan",
+        "https://www.instagram.com/centraltoursmazatlan"
+      ],
+      "logo": "material/logo/logo-central-tours-mazatlan.png",
+      "priceRange": "$$"
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "item": {
-        "@type": "TouristTrip",
-        "name": "Tour Isla Venados",
-        "description": "Excursión a la hermosa Isla Venados para snorkeling y observación de fauna",
-        "offeredBy": {
-          "@type": "Organization",
-          "name": "Central Tours Mazatlán"
-        }
-      }
+      "@type": "WebSite",
+      "@id": "https://www.centraltoursmazatlan.com/#website",
+      "url": "https://www.centraltoursmazatlan.com",
+      "name": "Central Tours Mazatlán",
+      "description": "Tours y experiencias premium en Mazatlán, Sinaloa, México",
+      "publisher": {
+        "@id": "https://www.centraltoursmazatlan.com/#agency"
+      },
+      "inLanguage": ["es-MX", "en"]
     },
     {
-      "@type": "ListItem",
-      "position": 3,
-      "item": {
-        "@type": "TouristTrip",
-        "name": "Turibus Mazatlán",
-        "description": "Recorrido turístico por los principales atractivos de Mazatlán en autobús panorámico",
-        "offeredBy": {
-          "@type": "Organization",
-          "name": "Central Tours Mazatlán"
+      "@type": "ItemList",
+      "name": "Catálogo de Tours - Central Tours Mazatlán",
+      "description": "Catálogo completo de todos nuestros tours y experiencias en Mazatlán, Sinaloa, México",
+      "url": "https://www.centraltoursmazatlan.com/our-catalog.html",
+      "numberOfItems": 17,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Paseo Isla de la Piedra",
+            "description": "Experiencia todo incluido en una de las mejores playas del puerto.",
+            "url": "https://www.centraltoursmazatlan.com/paseo-isla-piedra.html",
+            "image": "material/catalog-thumbnails/isla-piedra.webp"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Jungla y Playa",
+            "description": "Aventura total entre la selva y el mar, con sabor local.",
+            "url": "https://www.centraltoursmazatlan.com/paseo-jungla-playa.html",
+            "image": "material/catalog-thumbnails/playa-jungla.webp"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Turibus en Mazatlán",
+            "description": "Conoce Mazatlán desde lo alto, con vistas, historia y estilo.",
+            "url": "https://www.centraltoursmazatlan.com/paseo-turibus.html",
+            "image": "material/catalog-thumbnails/turibus.webp"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Tirolesa Extreme",
+            "description": "Vuela entre árboles, come delicioso y brinda con tequila en grande.",
+            "url": "https://www.centraltoursmazatlan.com/paseo-tirolesa-extreme.html",
+            "image": "material/catalog-thumbnails/tirolesa.webp"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Paseo en Helicóptero",
+            "description": "Vuela sobre Mazatlán en un helicóptero privado.",
+            "url": "https://www.centraltoursmazatlan.com/paseo-helicoptero.html",
+            "image": "material/catalog-thumbnails/catamaran-fresh.webp"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Paseo en Kayak",
+            "description": "Navega el río, degusta un delicioso tequila y almuerza en una hacienda Sinaloense.",
+            "url": "https://www.centraltoursmazatlan.com/paseo-kayak.html",
+            "image": "material/catalog-thumbnails/paseo-kayak.webp"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Temazcal y Aguas Termales",
+            "description": "Experiencia tradicional y curativa.",
+            "url": "https://www.centraltoursmazatlan.com/paseo-aguas-termales-temazcal.html",
+            "image": "material/catalog-thumbnails/catamaran-fresh.webp"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Rancho Tour a Caballo",
+            "description": "Caballos, tequila y almuerzo típico Sinaloense.",
+            "url": "https://www.centraltoursmazatlan.com/paseo-tour-caballos-lionso.html",
+            "image": "material/catalog-thumbnails/caballos-mrlionso.webp"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Expedición de Buceo",
+            "description": "Bucea en las aguas de Pacífico Mazatleco.",
+            "url": "https://www.centraltoursmazatlan.com/paseo-expedicion-buceo.html",
+            "image": "material/catalog-thumbnails/catamaran-fresh.webp"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Avistamiento de Ballenas",
+            "description": "Experiencia ecoturistica sin igual.",
+            "url": "https://www.centraltoursmazatlan.com/paseo-avistamiento-ballenas.html",
+            "image": "material/catalog-thumbnails/catamaran-fresh.webp"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Speed Boats",
+            "description": "¡Velocidad extrema! Acelera sobre el mar en una lancha de alta velocidad.",
+            "url": "https://www.centraltoursmazatlan.com/paseo-speedboats.html",
+            "image": "material/catalog-thumbnails/speedboats.webp"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Cuatrimotos Extreme",
+            "description": "Entre ríos y pueblos, tequila y comida regional.",
+            "url": "https://www.centraltoursmazatlan.com/paseo-cuatrimotos-extreme.html",
+            "image": "material/catalog-thumbnails/cuatrimotos-extreme.webp"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Cuatrimotos Adventure",
+            "description": "Agaves, terracerías y playa. Prueba el sabor de Sinaloa.",
+            "url": "https://www.centraltoursmazatlan.com/paseo-cuatrimotos-adventure.html",
+            "image": "material/catalog-thumbnails/cuatrimotos-mrlionso.webp"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Paseo Isla de Venados",
+            "description": "Conoce la famosa Isla de Venados. Nadega la bahía en un trimarán.",
+            "url": "https://www.centraltoursmazatlan.com/paseo-isla-venado.html",
+            "image": "material/catalog-thumbnails/isla-venados.webp"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 15,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Catamarán con Banda",
+            "description": "Atardecer, música de banda, diversión y más.",
+            "url": "https://www.centraltoursmazatlan.com/paseo-sensation-banda.html",
+            "image": "material/catalog-thumbnails/catamaran-banda.webp"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 16,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Catamarán Splash Party",
+            "description": "Barra libre, taquiza y fiestón en yate con mucha música.",
+            "url": "https://www.centraltoursmazatlan.com/paseo-sensation-splash-party.html",
+            "image": "material/catalog-thumbnails/catamaran-splash.webp"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 17,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Catamarán Fresh Cruise",
+            "description": "Diversión, comida, música sobre un catamarán.",
+            "url": "https://www.centraltoursmazatlan.com/paseo-sensation-fresh-cruise.html",
+            "image": "material/catalog-thumbnails/catamaran-fresh.webp"
+          }
         }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 4,
-      "item": {
-        "@type": "Service",
-        "name": "Transporte Aeropuerto VIP",
-        "description": "Servicio de transporte premium desde/hacia el aeropuerto de Mazatlán",
-        "offeredBy": {
-          "@type": "Organization",
-          "name": "Central Tours Mazatlán"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 5,
-      "item": {
-        "@type": "Service",
-        "name": "Rentas Vacacionales",
-        "description": "Alquiler de propiedades vacacionales en las mejores zonas de Mazatlán",
-        "offeredBy": {
-          "@type": "Organization",
-          "name": "Central Tours Mazatlán"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 6,
-      "item": {
-        "@type": "TouristTrip",
-        "name": "Aventuras en Helicóptero",
-        "description": "Paseos y experiencias aéreas en helicóptero sobre Mazatlán",
-        "offeredBy": {
-          "@type": "Organization",
-          "name": "Central Tours Mazatlán"
-        }
-      }
+      ]
     }
   ]
 }

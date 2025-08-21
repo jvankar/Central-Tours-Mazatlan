@@ -54,81 +54,177 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": ["TravelAgency", "TouristInformationCenter"],
+  "@type": ["TourismAgency", "Service"],
   "@id": "https://www.centraltoursmazatlan.com/#organization",
   "name": "Central Tours Mazatlán",
+  "alternateName": ["Central Tours Mazatlan", "Tours en Mazatlán"],
   "url": "https://www.centraltoursmazatlan.com/",
-  "description": "Agencia líder en tours y experiencias turísticas en Mazatlán. Especialistas en tours a Isla de la Piedra, Isla Venados, transporte VIP y aventuras personalizadas.",
-  "areaServed": {
-    "@type": "City",
-    "name": "Mazatlán",
-    "sameAs": "https://es.wikipedia.org/wiki/Mazatl%C3%A1n"
-  },
-  "serviceArea": {
-    "@type": "AdministrativeArea",
-    "name": "Mazatlán y alrededores"
-  },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-    "opens": "07:00",
-    "closes": "00:00"
-  },
-  "telephone": "+52-669-152-5822",
-  "email": "info@centraltoursmazatlan.com",
+  "description": "Central Tours Mazatlán - La mejor agencia de tours y excursiones en Mazatlán. Ofrecemos renta de yates, tours, sesiones fotográficas en la playa y experiencias únicas en la Perla del Pacífico desde 2016. | The best tour agency in Mazatlán offering yacht rentals, tours, beach photoshoots and unique experiences in the Pearl of the Pacific since 2016.",
   "logo": "https://www.centraltoursmazatlan.com/material/icons/social-icon.png",
-  "priceRange": "$$",
-  "sameAs": [
-    "https://www.facebook.com/centraltoursmazatlan",
-    "https://www.instagram.com/centraltoursmazatlan",
+  "foundingDate": "2016",
+  "areaServed": "Mazatlán, Sinaloa, México",
+  "serviceArea": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 23.2494,
+      "longitude": -106.4111
+    },
+    "geoRadius": "50000"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+52-669-152-5822",
+    "email": "info@centraltoursmazatlan.com",
+    "contactType": "customer service",
+    "availableLanguage": ["Spanish", "English"],
+    "areaServed": "MX",
+    "contactOption": "TollFree"
+  },
+  "keywords": "renta de yates Mazatlán, tours Mazatlán, sesiones fotográficas playa Mazatlán, excursiones Mazatlán, paseos en barco Mazatlán, yacht rental Mazatlán, Mazatlán tours, beach photoshoots Mazatlán, Isla de la Piedra, Isla Venados, catamarán Mazatlán, transporte aeropuerto Mazatlán",
+  "knowsAbout": [
+    "Tours en Mazatlán",
+    "Renta de yates",
+    "Sesiones fotográficas en la playa",
+    "Excursiones Isla Venados",
+    "Transporte turístico",
+    "Experiencias acuáticas",
+    "Turismo de aventura",
+    "Mazatlán tourism",
+    "Yacht rentals",
+    "Beach photoshoots"
   ],
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "Tours y servicios turísticos en Mazatlán",
+      "description": "Experiencias únicas y personalizadas en la Perla del Pacífico | Unique and personalized experiences in the Pearl of the Pacific"
+    }
+  },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Tours en Mazatlán",
+    "name": "Tours y Servicios de Central Tours Mazatlán",
     "itemListElement": [
       {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "TouristTrip",
-          "name": "Tour Isla de la Piedra",
-          "description": "Excursión completa a la famosa Isla de la Piedra con comida incluida y actividades acuáticas",
-          "touristType": "Familiar, Grupos, Parejas",
-          "duration": "PT4H"
-        }
+        "@type": "OfferCatalog",
+        "name": "Tours y Excursiones en Mazatlán",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "TouristTrip",
+              "name": "Paseo a Isla de la Piedra | Stone Island Tour",
+              "description": "Disfruta de un día completo en Isla de la Piedra con comida incluida y actividades acuáticas | Enjoy a full day at Stone Island with included food and water activities"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "TouristTrip",
+              "name": "Paseo a Isla Venados | Deer Island Tour",
+              "description": "Aventura en Isla Venados para snorkeling y observación de fauna marina | Adventure at Deer Island for snorkeling and marine wildlife observation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "TouristTrip",
+              "name": "Ruta en Cuatrimoto Extrema | Extreme ATV Tour",
+              "description": "Recorrido emocionante en cuatrimoto por terrenos diversos de Mazatlán | Exciting ATV ride through diverse terrains of Mazatlán"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "TouristTrip",
+              "name": "Sensation Catamarán con Banda Sinaloense | Sensation Catamaran with Sinaloan Band",
+              "description": "Paseo en catamarán con música tradicional de banda sinaloense | Catamaran ride with traditional Sinaloan band music"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "TouristTrip",
+              "name": "Sensation Catamarán Fresh Cruise",
+              "description": "Experiencia relajante en catamarán con bebidas refrescantes | Relaxing catamaran experience with refreshing drinks"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "TouristTrip",
+              "name": "Sensation Catamarán Splash Party",
+              "description": "Fiesta acuática en catamarán con música y diversión | Water party on a catamaran with music and fun"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "TouristTrip",
+              "name": "Tirolesa Extreme | Extreme Zipline",
+              "description": "Emoción y adrenalina en tirolesas sobre paisajes espectaculares | Thrill and adrenaline on ziplines over spectacular landscapes"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "TouristTrip",
+              "name": "Paseo en Helicóptero | Helicopter Tour",
+              "description": "Vistas panorámicas de Mazatlán desde el aire | Panoramic views of Mazatlán from the air"
+            }
+          }
+        ]
       },
       {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "TouristTrip",
-          "name": "Tour Isla Venados",
-          "description": "Aventura en Isla Venados para snorkeling y observación de fauna marina",
-          "touristType": "Aventureros, Familias",
-          "duration": "PT5H"
-        }
+        "@type": "OfferCatalog",
+        "name": "Servicios de Transporte | Transportation Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Transporte al Aeropuerto de Mazatlán | Mazatlán Airport Transportation",
+              "description": "Servicio de transporte premium desde/hacia el aeropuerto de Mazatlán | Premium transportation service to/from Mazatlán airport"
+            }
+          }
+        ]
       },
       {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Transporte Aeropuerto VIP",
-          "description": "Servicio de transporte premium desde/hacia el aeropuerto de Mazatlán",
-          "serviceType": "Transporte terrestre"
-        }
+        "@type": "OfferCatalog",
+        "name": "Renta de Yates | Yacht Rental",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Renta de Yates en Mazatlán | Yacht Rental in Mazatlán",
+              "description": "Alquiler de yates de lujo para eventos privados y recorridos | Luxury yacht rentals for private events and tours"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "OfferCatalog",
+        "name": "Servicios Fotográficos | Photography Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Sesión Fotográfica en la Playa de Mazatlán | Beach Photoshoot in Mazatlán",
+              "description": "Sesiones profesionales de fotografía en las playas de Mazatlán | Professional photography sessions on Mazatlán beaches"
+            }
+          }
+        ]
       }
     ]
   },
-  "potentialAction": {
-    "@type": "ReserveAction",
-    "name": "Reservar Tour",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": "https://www.centraltoursmazatlan.com/tours-paseos.html",
-      "actionPlatform": [
-        "http://schema.org/DesktopWebPlatform",
-        "http://schema.org/MobileWebPlatform"
-      ]
-    }
-  }
+  "sameAs": [
+    "https://www.facebook.com/CentralToursMazatlan",
+    "https://www.instagram.com/centraltoursmazatlan",
+    "https://www.tripadvisor.com/CentralToursMazatlan"
+  ]
 }
 </script>
 

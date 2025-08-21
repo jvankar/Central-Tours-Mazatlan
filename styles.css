@@ -1895,6 +1895,11 @@ body {
         line-height: 1.6;
     }
 
+    .nota-tour {
+        font-size: clamp(.7rem, 4vw, 1rem);
+        list-style: none;
+    }
+
     .tour-description p {
         font-weight: 600;
         text-align: justify;
@@ -3041,8 +3046,13 @@ body {
     .tours-section p, 
     .includes-list li {
         font-size: 1.3rem;
-        color: var(--color-primary);
         line-height: 1.6;
+    }
+
+    .nota-tour {
+        font-size: 1.1rem !important;
+        list-style: none;
+        margin-left: -2vw;
     }
 
     .prices-section {
