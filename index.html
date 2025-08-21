@@ -58,75 +58,42 @@
   "@id": "https://www.centraltoursmazatlan.com/#organization",
   "name": "Central Tours Mazatlán",
   "url": "https://www.centraltoursmazatlan.com/",
-  "description": "La Mejor Agencia de Tours En Mazatlán especializada en experiencias únicas y servicios de alta calidad. Ofrecemos tours a Isla de la Piedra, Isla Venados, Turibus por Mazatlán, transporte aeropuerto VIP, rentas vacacionales y aventuras en helicóptero.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Mazatlán",
-    "addressRegion": "Sinaloa",
-    "addressCountry": "MX"
-  },
+  "description": "Agencia líder en tours y experiencias turísticas en Mazatlán. Especialistas en tours a Isla de la Piedra, Isla Venados, transporte VIP y aventuras personalizadas.",
   "areaServed": {
     "@type": "City",
-    "name": "Mazatlán"
+    "name": "Mazatlán",
+    "sameAs": "https://es.wikipedia.org/wiki/Mazatl%C3%A1n"
   },
-  "openingHours": "Mo-Su 07:00-00:00",
+  "serviceArea": {
+    "@type": "AdministrativeArea",
+    "name": "Mazatlán y alrededores"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "opens": "07:00",
+    "closes": "00:00"
+  },
   "telephone": "+52-669-152-5822",
   "email": "info@centraltoursmazatlan.com",
   "logo": "https://www.centraltoursmazatlan.com/material/icons/social-icon.png",
-  "image": [
-    "https://www.centraltoursmazatlan.com/material/images/hero-banner.jpg",
-    "https://www.centraltoursmazatlan.com/material/images/tours-gallery-1.jpg"
-  ],
   "priceRange": "$$",
   "sameAs": [
     "https://www.facebook.com/centraltoursmazatlan",
     "https://www.instagram.com/centraltoursmazatlan",
-    "https://twitter.com/centraltoursmaz"
   ],
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.centraltoursmazatlan.com/"
-  },
-  "hasMenu": {
-    "@type": "Menu",
-    "name": "Navegación del Sitio",
-    "hasMenuSection": [
-      {
-        "@type": "MenuSection",
-        "name": "Acerca de Nosotros",
-        "url": "https://www.centraltoursmazatlan.com/about-us.html",
-        "description": "Conoce nuestra historia, misión y visión"
-      },
-      {
-        "@type": "MenuSection",
-        "name": "Contáctanos",
-        "url": "https://www.centraltoursmazatlan.com/contact-us.html",
-        "description": "Formas de contactar a nuestro equipo"
-      },
-      {
-        "@type": "MenuSection",
-        "name": "Nuestro Catálogo",
-        "url": "https://www.centraltoursmazatlan.com/our-catalog.html",
-        "description": "Todos nuestros servicios y tours disponibles"
-      },
-      {
-        "@type": "MenuSection",
-        "name": "Tours y Paseos",
-        "url": "https://www.centraltoursmazatlan.com/tours-paseos.html",
-        "description": "Experiencias y aventuras únicas en Mazatlán"
-      }
-    ]
-  },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Tours y Servicios en Mazatlán",
+    "name": "Tours en Mazatlán",
     "itemListElement": [
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "TouristTrip",
           "name": "Tour Isla de la Piedra",
-          "description": "Tour a la famosa Isla de la Piedra con comida incluida y actividades acuáticas"
+          "description": "Excursión completa a la famosa Isla de la Piedra con comida incluida y actividades acuáticas",
+          "touristType": "Familiar, Grupos, Parejas",
+          "duration": "PT4H"
         }
       },
       {
@@ -134,15 +101,9 @@
         "itemOffered": {
           "@type": "TouristTrip",
           "name": "Tour Isla Venados",
-          "description": "Excursión a la hermosa Isla Venados para snorkeling y observación de fauna"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "TouristTrip",
-          "name": "Turibus Mazatlán",
-          "description": "Recorrido turístico por los principales atractivos de Mazatlán en autobús panorámico"
+          "description": "Aventura en Isla Venados para snorkeling y observación de fauna marina",
+          "touristType": "Aventureros, Familias",
+          "duration": "PT5H"
         }
       },
       {
@@ -150,33 +111,24 @@
         "itemOffered": {
           "@type": "Service",
           "name": "Transporte Aeropuerto VIP",
-          "description": "Servicio de transporte premium desde/hacia el aeropuerto de Mazatlán"
+          "description": "Servicio de transporte premium desde/hacia el aeropuerto de Mazatlán",
+          "serviceType": "Transporte terrestre"
         }
       }
     ]
   },
-  "potentialAction": [
-    {
-      "@type": "ReserveAction",
-      "name": "Reservar Tour",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://www.centraltoursmazatlan.com/tours-paseos.html",
-        "actionPlatform": [
-          "http://schema.org/DesktopWebPlatform",
-          "http://schema.org/MobileWebPlatform"
-        ]
-      }
-    },
-    {
-      "@type": "ContactPoint",
-      "name": "Consultas por WhatsApp",
-      "contactType": "customer service",
-      "telephone": "+52-669-152-5822",
-      "areaServed": "MX",
-      "availableLanguage": ["Spanish", "English"]
+  "potentialAction": {
+    "@type": "ReserveAction",
+    "name": "Reservar Tour",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://www.centraltoursmazatlan.com/tours-paseos.html",
+      "actionPlatform": [
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/MobileWebPlatform"
+      ]
     }
-  ]
+  }
 }
 </script>
 
