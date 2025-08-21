@@ -31,7 +31,7 @@
   <link rel="icon" href="material/icons/fav-icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" sizes="180x180" href="material/icons/apple-touch-icon.png">
   <link rel="manifest" href="material/icons/site.webmanifest">
-  <meta name="theme-color" content="#0d6efd">
+  <meta name="theme-color" content="#FFFEFD">
 
   <!-- Legacy PNG Formats -->
   <link rel="icon" type="image/png" sizes="16x16" href="material/icons/favicon-16x16.png">
@@ -52,23 +52,134 @@
   
   <!-- Structured Data (Homepage) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TravelAgency",
-    "name": "Central Tours Mazatlán",
-    "url": "https://www.centraltoursmazatlan.com/",
-    "description": "La Mejor Agencia de Tours En Mazatlán especializada en experiencias únicas y servicios de alta calidad",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Mazatlán",
-      "addressRegion": "Sinaloa",
-      "addressCountry": "MX"
+{
+  "@context": "https://schema.org",
+  "@type": ["TravelAgency", "TouristInformationCenter"],
+  "@id": "https://www.centraltoursmazatlan.com/#organization",
+  "name": "Central Tours Mazatlán",
+  "url": "https://www.centraltoursmazatlan.com/",
+  "description": "La Mejor Agencia de Tours En Mazatlán especializada en experiencias únicas y servicios de alta calidad. Ofrecemos tours a Isla de la Piedra, Isla Venados, Turibus por Mazatlán, transporte aeropuerto VIP, rentas vacacionales y aventuras en helicóptero.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Mazatlán",
+    "addressRegion": "Sinaloa",
+    "addressCountry": "MX"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Mazatlán"
+  },
+  "openingHours": "Mo-Su 07:00-00:00",
+  "telephone": "+52-669-152-5822",
+  "email": "info@centraltoursmazatlan.com",
+  "logo": "https://www.centraltoursmazatlan.com/material/icons/social-icon.png",
+  "image": [
+    "https://www.centraltoursmazatlan.com/material/images/hero-banner.jpg",
+    "https://www.centraltoursmazatlan.com/material/images/tours-gallery-1.jpg"
+  ],
+  "priceRange": "$$",
+  "sameAs": [
+    "https://www.facebook.com/centraltoursmazatlan",
+    "https://www.instagram.com/centraltoursmazatlan",
+    "https://twitter.com/centraltoursmaz"
+  ],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.centraltoursmazatlan.com/"
+  },
+  "hasMenu": {
+    "@type": "Menu",
+    "name": "Navegación del Sitio",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Acerca de Nosotros",
+        "url": "https://www.centraltoursmazatlan.com/about-us.html",
+        "description": "Conoce nuestra historia, misión y visión"
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Contáctanos",
+        "url": "https://www.centraltoursmazatlan.com/contact-us.html",
+        "description": "Formas de contactar a nuestro equipo"
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Nuestro Catálogo",
+        "url": "https://www.centraltoursmazatlan.com/our-catalog.html",
+        "description": "Todos nuestros servicios y tours disponibles"
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Tours y Paseos",
+        "url": "https://www.centraltoursmazatlan.com/tours-paseos.html",
+        "description": "Experiencias y aventuras únicas en Mazatlán"
+      }
+    ]
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Tours y Servicios en Mazatlán",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "TouristTrip",
+          "name": "Tour Isla de la Piedra",
+          "description": "Tour a la famosa Isla de la Piedra con comida incluida y actividades acuáticas"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "TouristTrip",
+          "name": "Tour Isla Venados",
+          "description": "Excursión a la hermosa Isla Venados para snorkeling y observación de fauna"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "TouristTrip",
+          "name": "Turibus Mazatlán",
+          "description": "Recorrido turístico por los principales atractivos de Mazatlán en autobús panorámico"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Transporte Aeropuerto VIP",
+          "description": "Servicio de transporte premium desde/hacia el aeropuerto de Mazatlán"
+        }
+      }
+    ]
+  },
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "name": "Reservar Tour",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://www.centraltoursmazatlan.com/tours-paseos.html",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
     },
-    "openingHours": "Mo-Su 07:00-00:00",
-    "telephone": "+52-669-152-5822",
-    "image": "https://www.centraltoursmazatlan.com/material/icons/social-icon.png"
-  }
-  </script>
+    {
+      "@type": "ContactPoint",
+      "name": "Consultas por WhatsApp",
+      "contactType": "customer service",
+      "telephone": "+52-669-152-5822",
+      "areaServed": "MX",
+      "availableLanguage": ["Spanish", "English"]
+    }
+  ]
+}
+</script>
+
 </head>
 
 <body>
@@ -194,6 +305,57 @@
   </div>
 </section>
 
+  <!-- Nuestro Catálogo Section -->
+<section class="catalog-section-container" id="catalog-landing-page">
+  <h1 class="catalog-section-title">NUESTRO CATÁLOGO</h1>
+  <div class="catalog-section-content">
+    <article>
+  <a href="tours-paseos.html">
+    <div class="catalog-article-content" id="paseos-tours">
+      <img src="material/categories (webp)/paesos-tours.webp" alt="Paseos y tours en Mazatlán" class="catalog-category-img">
+      <div class="catalog-text-content">
+        <h2>Paseos & Tours</h2>
+        <p>Los mejores en Mazatlán.</p>
+      </div>
+    </div>
+  </a>
+</article>
+<article>
+  <a href="#">
+    <div class="catalog-article-content" id="yates-pescas">
+      <img src="material/categories (webp)/yates-pescas.webp" alt="Yates de lujo y viajes de pesca en Mazatlán" class="catalog-category-img">
+      <div class="catalog-text-content">
+        <h2>Yates & Pescas</h2>
+        <p>Embarcaciones privadas para cada ocasión.</p>
+      </div>
+    </div>
+  </a>
+</article>
+<article>
+  <a href="#">
+    <div class="catalog-article-content" id="rentas-vacacionales">
+      <img src="material/categories (webp)/rentas-vacacionales.webp" alt="Rentas vacacionales en Mazatlán" class="catalog-category-img">
+      <div class="catalog-text-content">
+        <h2>Rentas Vacacionales</h2>
+        <p>En las mejores zonas de Mazatlán.</p>
+      </div>
+    </div>
+  </a>
+</article>
+<article>
+  <a href="transporte-aeropuerto.html">
+    <div class="catalog-article-content" id="transportaciones">
+      <img src="material/categories (webp)/transportacion.webp" alt="Transportación desde y al aeropuerto de Mazatlán" class="catalog-category-img">
+      <div class="catalog-text-content">
+        <h2>Transporte</h2>
+        <p>Traslados y servicios de transporte.</p>
+      </div>
+    </div>
+  </a>
+</article>
+  </div>
+</section>
+
   <!-- Nuestro Blog Section -->
 <section class="nuestro-blog">
         <div class="container-blog">
@@ -254,11 +416,37 @@
 
 
 </main>
-  <!-- Footer -->
-  <footer class="copyright">
-        <p>&copy; 2025 Central Tours Mazatlán. Todos los derechos reservados.</p>
+
+<!-- Footer -->
+<footer class="site-footer-footer" role="contentinfo">
+    <div class="footer-inner-footer">
+        <div class="footer-left-footer">
+            <p class="footer-copy-footer">&copy; 2025 Central Tours Mazatlán. Todos los derechos reservados.</p>
+        </div>
+        
+        <div class="footer-right-footer">
+            <p class="social-title-footer">Síguenos</p>
+            
+            <nav class="social-icons-footer" aria-label="Redes sociales">
+                <a class="social-link-footer" href="https://instagram.com/tuusuario" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <img src="material/svg/instagram-logo.svg" alt="Instagram"> 
+                </a>
+                
+                <a class="social-link-footer" href="https://facebook.com/tuusuario" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <img src="material/svg/facebook-logo.svg" alt="Facebook">
+                </a>
+                
+                <a class="social-link-footer" href="https://wa.me/tuNumero" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                    <img src="material/svg/whatsapp-icon.svg" alt="WhatsApp"> 
+                </a>
+                
+                <a class="social-link-footer" href="https://youtube.com/tuCanal" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                    <img src="material/svg/youtube-icon.svg" alt="YouTube"> 
+                </a>
+            </nav>
+        </div>
+    </div>
 </footer>
 
 </body>
-
 </html>
